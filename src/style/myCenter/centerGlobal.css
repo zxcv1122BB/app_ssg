@@ -1,0 +1,1512 @@
+/**{
+	text-align: left;
+}*/
+body {
+	/*font-size: 0.25rem;*/
+	background-color: #f6f2f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	/*margin-top: 0.7rem;*/
+	/*margin-bottom: 0.7rem;*/
+}
+input[type=checkbox]{
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+}
+input{
+	/*background: white;*/
+}
+.navNoMes{
+	display: none;
+	text-align: center;
+	background: white;
+	padding: 2rem 0;
+	color: gray;
+	font-size: 0.9rem;
+}
+
+* {
+    margin: 0 auto;
+    /*padding: 0;*/
+    /*touch-action: none;*/
+}
+#OA_task_1{
+	touch-action: none;
+}
+/* .guessYes{
+	color: #ba142b;
+} */
+ul {
+    list-style-type: none;
+}
+/*奖金详情*/
+.avg{
+	font-size: 0.8rem;
+}
+input {
+    outline: none;
+}
+.title{
+	color: #9E9E9E;
+	font-size: 1.1rem;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+#footFD select {
+	margin-bottom: 0.2rem;
+}
+
+em {
+    font-style: normal;
+}
+
+.isDan{
+	/* border: 1px solid #ba142b; */
+	font-size: 1rem;
+	/* color: #ba142b; */
+}
+
+#noMessage {
+    margin: 19%;
+    text-align: center;
+    color: #3F3F3F;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+.btnSure {
+    width: 100%;
+    height: 2.6rem;
+    /* background: #ba142b; */
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    display: block;
+}
+.huiTi {
+    color: gray;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.clear {
+    clear: both;
+}
+
+#protitle{
+	color:gray;font-size: 0.8rem;padding:0.3rem;line-height: 1rem;
+}
+/*防止闪烁*/
+[v-cloak] {
+    display: none;
+}
+
+.chooseTime {
+    display: inline-block;
+    width: 25%;
+}
+
+.chooseType {
+    display: inline-block;
+    width: 40%;
+}
+.chooseStatus{
+	display: inline-block;
+    width: 30%;
+}
+#selectType{
+	z-index:999;
+}
+
+
+/*时间显示*/
+.show {
+	position: relative;
+    padding: 0.5rem;
+    width: 92%;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+    /*color: gray;*/
+    margin-bottom: 0.5rem;
+}
+
+
+/*时间选择*/
+.select {
+    position: absolute;
+    background: white;
+    z-index: 999;
+    font-size: 1.1rem;
+    width: 22.4%;
+    top: 6.4rem;
+    left: .4rem;
+    display: none;
+    border: 1px solid #D2E4E8;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.select li {
+    border-bottom: 1px solid #D3D3D3;
+    height: 2rem;
+    line-height: 2rem;
+    color: gray;
+    text-align: center;
+}
+.selects {
+    position: absolute;
+    background: white;
+    z-index: 999;
+    font-size: 1.1rem;
+    width: 27.4%;
+    top: 6.4rem;
+    right: .95rem;
+    display: none;
+    border: 1px solid #D2E4E8;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.selects li {
+    border-bottom: 1px solid #D3D3D3;
+    height: 2rem;
+    line-height: 2rem;
+    color: gray;
+    text-align: center;
+}
+
+.selectType {
+    position: absolute;
+    background: white;
+    /*font-size: 1.1rem;*/
+    /*width: 26.7rem;*/
+    width: 100%;
+    height: 20rem;
+    top: 6.5rem;
+    left: 0rem;
+    display: none;
+    border: 1px solid #D2E4E8;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 9999;
+}
+/* .choose_yes{
+	/*background: url(../../assets/images/choose_yes.png) no-repeat 7.2rem 0.98rem;*/
+/* border: 1px solid #ba142b;
+} */
+.choose_no{
+	border: 1px solid #E3E3E3;
+}
+#section{
+	position: relative;
+}
+
+#footFD #background_gray{
+	top: 9rem;
+}
+#background_gray{
+	position: absolute;
+	display: none;
+	top: 6.5rem;
+	z-index: 99;
+	background: black;
+	opacity: 0.3;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+#selectType li{
+	float: left;
+    display: inline-block;
+	color: gray;
+	margin: 0.2rem 0.1rem;
+	text-align: center;
+	height: auto;
+	line-height: 2rem;
+	width: 99%;
+	border-radius: 4px;
+    position: relative;
+}
+#selectType li:not(:first-child) span{
+    display: inline-block;
+    width: 98%;
+    font-size: 14px;
+    color: #ccc;
+    text-align: left;
+}
+#selectType li span:before{
+
+}
+#selectType li span:after{
+
+}
+#selectType li ul{
+    display: block;
+    min-height: 50px;
+    clear: both;
+}
+#selectType li ul li{
+    float: left;
+    display: inline-block;
+    color: gray;
+    margin: 0.2rem 0.1rem;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+    width: 32.4%;
+    border-radius: 4px;
+    position: relative;
+}
+
+#selectType .choose_yes:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    background:  url(../../assets/images/choose_yes.png) no-repeat 100% 100%;
+}
+
+#section,#noMessage{
+	display: none;
+}
+
+.select li:last-of-type {
+    border: 0;
+}
+
+.jian {
+    position: absolute;
+    top: 1.1rem;
+    right:.8rem;
+}
+
+.gameId {
+    display: none;
+}
+
+
+
+/*彩投注详情*/
+
+/*#article {
+    background-color: #f3f3f3;
+}*/
+
+#article .headerTit {
+    padding-top: 0.2rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #a7a7a7;
+    padding-left: 0.23rem;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 1.1rem;
+}
+
+#article .section ul {
+    color: #535353;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 0.3rem;
+}
+
+#article .sectul ul {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#article .selUl ul:last-of-type {
+    border: none;
+}
+
+#article .changeCol {
+    color: #d67153;
+}
+
+#sel_font  span,#skin span{
+    display: inline-block;
+    float: left;
+    text-align: left !important;
+}
+#sel_font  .select_size,#skin .select_skin{
+     display: inline-block;
+     float: right;
+     width: 20%;
+    position: relative;
+    /* border: 1px solid #d81e06; */
+    height: 2rem;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+    /*border-radius: 0.5rem;*/
+ }
+#sel_font  .select_size:after,#skin .select_skin::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 8px;
+    border-style: dashed solid solid  dashed;
+    /* border-color: transparent  red  red transparent; */
+    right:  0;
+    bottom: 0;
+    text-align: center;
+    /*background: url("../../assets/images/choose_yes.png") no-repeat 100% 100%;*/
+    pointer-events: none;
+}
+
+#sel_font  .select_size select,#skin .select_skin select{
+     display: inline-block;
+     width: 100%;
+     position: relative;
+     font-size: 1.2rem;
+    height: 100%;
+    padding: 0 0 0 1.4rem;
+    /*border-radius: 0.5rem;*/
+
+
+ }
+#sel_font  .select_size select option,#skin .select_skin select option{
+    text-align: center;
+    /*padding-left: 20px;*/
+
+}
+
+
+/**/
+#moreMes .ticket{
+	font-size: 1.1rem;
+	height: 3rem;
+	line-height: 3rem;
+	width: 100%;
+	padding-left: 1rem;
+	border: 1px solid #E3E3E3;
+	color: #535353;
+	background: white;
+	margin:1rem 0 2rem 0;
+	position: relative;
+    box-sizing: border-box;
+}
+#moreMes .ticket span{
+	display: inline-block;
+	position: absolute;
+	right: 1.5rem;
+}
+#moreMes .section ul li{
+	display: block;
+}
+#moreMes .overMatch{
+	color: gray;
+	border: 1px solid #D3D3D3;
+	border-radius: 3px;
+	padding: 0 0.3rem;
+	margin-left: 0.5rem;
+	display: inline-block;
+}
+#moreMes .section ul{
+	padding: 0 1rem;
+}
+#moreMes .section span{
+	margin-right: 0.2rem;
+}
+#moreMes .macthMes{
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	width: 23rem;
+	margin-right: 1rem;
+}
+#moreMes .shenMes span{
+	display: inline-block;
+}
+/*资金明细*/
+#footFD #article .message {
+    font-size: 0.1rem;
+    color: #9b9b9b;
+    height: 0.5rem;
+    padding: 0.1rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#footFD #article section {
+    /* background: white; */
+    background: #424242;
+    color:#fff;
+}
+
+#footFD #article section .isclick {
+    border-bottom: 1px solid #e1e1e1;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    font-size: 1.1rem;
+    padding-left: 0.8rem;
+}
+
+#footFD #article section div span {
+    display: inline-block;
+}
+
+#footFD #article section div span:first-of-type {
+    color: #4f4f4f;
+    padding-right: 0.61rem;
+}
+
+#footFD #article section div span:nth-of-type(2) {
+    padding-right: 0.5rem;
+}
+
+#footFD #article section div .coin {
+    color: #f05618;
+}
+
+#footFD #article section div span:nth-of-type(3) {
+    color: gray;
+    /* background: url(../../assets/images/img_right.gif) no-repeat right; */
+    padding-right: 1.2rem;
+    position: absolute;
+    right: 0.8rem;
+}
+
+#footFD #article1 {
+    display: none;
+}
+/*充值*/
+#deposit1 #article {
+    color: #4b4b4b;
+}
+
+#deposit1 #article section div {
+    border-top: 1px solid #e1e1e1;
+    height: 6rem;
+    line-height: 3rem;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    /* background-color: white; */
+    color: #fff;
+}
+
+#deposit1 #article section div:last-of-type {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+/*投注记录*/
+#betRecord #article section {
+    margin-top: 0.2rem;
+}
+
+#betRecord #article section .isclick {
+    background-color: white;
+    height: 4.2rem;
+    font-size: 1.1rem;
+    padding-left: 0.1rem;
+    color: #939393;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#betRecord #article section div ul:first-of-type {
+    float: left;
+}
+
+#betRecord #article section div ul:nth-of-type(2) {
+    float: right;
+    text-align: right;
+    padding-right: 1.2rem;
+    margin-right: 0.5rem;
+    background: url(../../assets/images/img_right.gif) no-repeat right;
+}
+
+#betRecord #article section div ul .img {
+    position: relative;
+}
+#betRecord #article section div ul img{
+	 position: absolute;
+	 top: .2rem;
+	 width: 1.6rem;
+}
+/*.foot{
+	background: url(../../../assets/images/img_foot.png) no-repeat;
+}
+.basket{
+	background: url(../../../assets/images/img_bask.png) no-repeat;
+}
+.cai{
+	background: url(../../../assets/images/cai_img.png) no-repeat;
+}*/
+/*#betRecord #article section div ul .img img{
+    width: 1.2rem;margin-right: 0.1rem;
+}*/
+
+
+#betRecord #article section div ul li {
+    line-height: 2rem;
+    margin-left: 0.5rem;
+}
+
+
+
+/*出票明细*/
+#ticDetails{
+    background: #f3f3f3;
+    font-size: 1.1rem;
+}
+
+#ticDetails #article{
+	margin: 1rem;
+}
+
+#ticDetails table {
+	background: white;
+    border-collapse: collapse;
+    border: 1px solid #E3E3E3;
+}
+
+#ticDetails table th {
+    background-color: #efa588;
+    color: white;
+    width: 5rem;
+    text-align: center;
+    height: 3rem;
+}
+#ticDetails table th:last-of-type{
+	width: 20rem;
+}
+
+#ticDetails table tr {
+    border-bottom: 1px solid #e1e1e1;
+    height: 3rem;
+}
+
+#ticDetails table tr td {
+    text-align: center;
+    color: #383838;
+}
+
+#ticDetails #article table tr td:last-of-type {
+    color: #aaaaaa;
+    height: 3rem;
+}
+#ticDetails #ticketDetailsStr{
+	background: white;
+	height: 12rem;
+	vertical-align: middle;
+	padding-top: 5rem;
+	text-align: center;
+}
+#ticDetails #ticketDetailsStr li{
+	float: left;
+	background: #ff8e00;
+	margin: 0 0.2rem;
+	padding: 0.1rem 0.3rem;
+	text-align: center;
+	color: white;
+}
+
+/*短消息*/
+#message #article section div .newMes {
+    background: url(../../assets/images/img_red.gif) repeat-x right;
+    background-size: 0.4rem;
+}
+#message #showMes{
+	position:relative;
+}
+#message #showMes span{
+	display: inline-block;
+}
+#message #showMes span.mesShu{
+	width: .2rem;height: 4rem;background: #FBFBFB;position: absolute;display: inline-block;z-index: 1;left: 0.3rem;top: -1rem;
+}
+#message #showMes span.mesBiao{
+	 width: .8rem;height: .8rem;border-radius: 50%;border: 1px solid #E3E3E3;display: inline-block;z-index: 10;position: absolute;top: .3rem;
+}
+#message #showMes span.mesBiaoYes{
+	background: #d71a20;
+}
+#message #showMes span.mesBiaoNo{
+	background: #d4d4d4;
+}
+#message #showMes span.content{
+	padding-left: 2rem;
+	width: 18rem;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	/*兼容性*/
+	-webkit-text-overflow:ellipsis;
+}
+#message #showMes span.mesTime{
+	position: absolute;
+	right: .2rem;
+}
+#mesContent #article{
+	padding: 1rem;
+	background: white;
+}
+#mesContent #article .mesContent{
+	position: relative;
+    margin: .5rem;
+    font-size: 1.1rem;
+    background: #fff;
+    border-radius: .1rem;
+    box-shadow: 0 0.05rem 0.1rem rgba(0,0,0,.3);
+}
+#mesContent #article .mesContent div:first-of-type{
+	text-align: center;
+	background: #f1f1f1;
+	font-size: 1.2rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0.3rem .1rem;
+}
+#mesContent #article .mesContent div:last-of-type{
+	position: relative;
+    padding: .75rem;
+}
+
+
+/*修改密码*/
+#changePwd #article {
+    color: #4d4d4d;
+    font-size:1rem;
+}
+
+#changePwd #article form:nth-of-type(2) {
+    display: none;
+}
+
+#changePwd #article nav {
+    height: 2.6rem;
+    line-height: 2.6rem;
+    /*background: white;*/
+    margin-bottom: 0.25rem;
+}
+.section{
+    padding: 10px 1%;
+    box-sizing: border-box;
+}
+.section li{
+	line-height: 1.8rem;
+	/*width: 90%;*/
+	/*margin-right: 0.2rem;*/
+}
+.section li .copy{
+	border: 1px dotted #ddd;
+    font-size: .8rem;
+    padding: .1rem .3rem;
+    /* background: #ba142b; */
+    color:#fff;
+    box-shadow: 1px 1px 1px #8d8b8b;
+    margin-right: 0;
+    cursor: pointer;
+}
+#changePwd  .section li .copy.bgCol{
+	background: #ff8e00;
+}
+#changePwd .section span{
+    margin-right: 1rem;
+}
+#changePwd #article nav span {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+#changePwd #article section .dShow {
+    /*height: 2.6rem;*/
+    /*background: white;*/
+    position: relative;
+}
+
+#changePwd #article section input[type=password] {
+    border: 0;
+    position: absolute;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 80%;
+}
+
+#changePwd #article section div {
+    /*height: 2.6rem;*/
+    padding-left: 1rem;
+    box-sizing: border-box;
+    line-height: 2.6rem;
+}
+
+#changePwd #article section:nth-of-type(2) {
+    display: none;
+}
+
+.clickYes {
+    color: #ef7163;
+    border-bottom: 1px solid #ef7163;
+}
+
+#prompt {
+    font-size: 1rem;
+    /* color: #ba142b; */
+    height: 2.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+#tishi {
+    font-size: 1rem;
+    /* color: #ba142b; */
+    height: 2.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.subtn {
+    /* background: #ba142b; */
+    border: 0;
+    border-radius: 6px;
+    padding: 7px 30px;
+    width: 80%;
+    margin: 0 10%;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+/*充值*/
+#depFile #article {
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+#depFile #article .userInfo{
+	padding: 0.6rem 1rem;
+}
+
+#depFile #article .userInfo span{
+	display: inline-block;
+}
+#depFile #article .userInfo span:last-of-type{
+	float: right;
+}
+/*#depFile #article .userInfo span:last-of-type{
+	float: right;
+}*/
+
+/* #depFile #article .userInfo em {
+    color: #ba142b;
+} */
+
+#depFile #article div:first-of-type p:nth-of-type(2) {
+    /*float: right;*/
+    line-height: 2rem;
+    height: 2rem;
+}
+
+#depFile #article .payNum {
+    /* background-color: white; */
+    color: gray;
+    height: 3rem;
+    line-height:3rem;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+#depFile #article .payNum  input[type=text] {
+    height: 2.2rem;
+    line-height: 2.2rem;
+    border: 1px solid #CCCCCC;
+    padding-left: 0.3rem;
+    margin-right: 0.1rem;
+    color: #333;
+    font-size: 1rem;
+    width: 55%;
+}
+#depFile #article .moneyPart{
+	margin-top: 0.1rem;
+	/* background: white; */
+	padding: 1rem 0;
+}
+
+#depFile #article .moneyPart .coin {
+    display: inline-block;
+    margin: 0.2rem;
+    width: 22%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+    color: #333;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#depFile #article .moneyPart  .choose_money{
+	background: url(../../assets/images/coin_yes.png) no-repeat 103% 110%;
+	border: 1px solid #e61d38;
+	color: #e61d38;
+}
+
+#depFile #article div:nth-of-type(4) em {
+    font-style: normal;
+}
+
+#depFile #article .choose {
+    color: gray;
+    font-size: 1.1rem;
+    text-indent: 1rem;
+    line-height: 3rem;
+}
+
+/* #de  m, */
+
+#depFile #article .payTit{
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    width: 20%;
+    border-right: 1px gainsboro solid;
+    border-bottom: 3px solid #c9c9c9;
+}
+#depFile #article nav span:last-of-type{
+	border-right: 0;
+}
+
+/* #depFile #article .chooseYes {
+    color: #e61d38;
+    border-bottom: 3px solid #e61d38;
+} */
+.payBtn input[type=button]{
+	/* background: #ba142b; */
+	width: 85%;
+	border: 0;
+	color: white;
+	margin: 5% 7%;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*#depFile #article .navMes{
+    background: white;
+}*/
+
+#depFile #article .navMes .nav {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    padding-right: 4rem;
+    line-height: 1rem;
+    background: url(../../assets/images/c_no.png) no-repeat 98% 1.2rem;
+}
+/* #depFile #article .navMes ul{
+  padding-bottom: 1.5rem !important;
+} */
+#depFile #article .navMes ul li{
+	padding: 0.2rem 0.1rem;
+}
+.money .cho_coin{
+	text-align: center;
+}
+.nav {
+    border-bottom: 1px dashed #cecece;
+}
+
+#depFile #article .navMes .navYes {
+    background: url(../../assets/images/c_yes.png) no-repeat 98% 1.2rem;
+}
+
+#depFile #article .navMes ul{
+  /* padding-left: 6rem !important; */
+  position: relative;
+
+}
+
+#depFile #article .navMes ul li.iconImgs{
+  width: 6rem;
+  height: 3rem;
+  position: absolute;
+  top: .2rem;
+  left: 0;
+
+}
+#depFile #article .navMes ul li.iconImgs img{
+  width: 100% !important;
+  height: 100%;
+
+}
+
+/*#depFile #article .navMes .iconImg li:first-of-type {
+    float: left;
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+}*/
+
+#depFile #article .navMes .info{
+	font-size: 1rem;
+    color: #e61d38;
+}
+#depFile #article .navMes .company{
+	display: block;
+}
+
+.coinYes{
+	background-color: #e61d38;
+	color: white;
+}
+
+#depFile #article .navMes .iconImg li:first-of-type img {
+    width: 2rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+
+/*设置资金密码*/
+#monPwd #article {
+    /*margin: 0.2rem;*/
+}
+#monPwd section{
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+#monPwd #article div {
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+
+#monPwd #article div p {
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+
+#monPwd #article div input {
+    border: 0;
+    position: absolute;
+    left: 7rem;
+    height: 3rem;
+    line-height: 3rem;
+    background:rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+#monPwd #article .huiTi {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+#monPwd #article span {
+    font-size: 1.1rem;
+}
+
+#monPwd #article p input[type=button] {
+    /*width: 100%;*/
+    /*height: 0.6rem;*/
+    /*background: #ba142b;*/
+    /*border: 0;*/
+    /*color: white;*/
+    width: 84%;
+    height: 2.8rem;
+    margin: 0 8%;
+    /* background: #ba142b; */
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    /*margin-left: 12%;*/
+
+}
+
+/*绑定银行卡*/
+#bindCard #article {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#bindCard #article div {
+    padding-left: 0.3rem;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 0.5rem;
+}
+
+#bindCard #article div:first-of-type {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+#bindCard #article div:nth-of-type(2) p {
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 1px solid #D3D4D3;
+}
+
+#bindCard #article div:nth-of-type(2) p:last-of-type {
+    border-bottom: 0;
+}
+
+#bindCard #article div span {
+    position: relative;
+}
+
+#bindCard #article div input {
+    position: absolute;
+    left: 8.5rem;
+    border: 0;
+    height: 2.8rem;
+}
+
+/*取现*/
+#enchash #article{
+	padding: 0.4rem;
+	font-size: 1rem;
+}
+#enchash #article div {
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+}
+#enchash #article .bankMes{
+	margin: 1.2rem 0;
+	padding: 1.2rem;
+	line-height: 1.6rem;
+}
+#enchash #article .bankMes span{
+	color: gray;
+}
+#enchash #article div p {
+    height: 1.85rem;
+    border-bottom: 1px solid #D3D4D3;
+    line-height: 1.85rem;
+    padding-left: 1.2rem;
+    color: #383838;
+}
+#enchash #article .hint{
+	padding: 1.2rem;
+	line-height: 1.32rem;
+}
+/* #enchash #article .hint span{
+	color: #ba142b;
+} */
+
+
+#enchash #article p em {
+    /* color: #ba142b; */
+    font-size: 1.28rem;
+}
+
+#enchash #article p span:last-of-type {
+    text-align: right;
+}
+
+#enchash #article form input[type=text] {
+    height: 3rem;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding-left:1.2rem;
+    font-size: 1rem;
+    background-color: white;
+}
+#enchash #article #allCash{
+	color:blue;
+	text-decoration: underline;
+	font-size: 0.8rem;
+}
+
+
+/*个人设置*/
+#setting #header>h1{
+	/*line-height: 3rem;*/
+}
+#setting #article section .hang {
+  width: 100%;
+    font-size: 1.1rem;
+    background: white;
+    border-bottom: 1px solid #D3D4D3;
+    padding:.2rem .5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    position: relative;
+}
+#setting .mui-switch{
+	position: absolute;
+	right: 1rem;
+	bottom: 0.6rem;
+}
+#setting #article section div span {
+    display: inline-block;
+    width: 48%;
+}
+
+#setting #article section div span:last-of-type {
+    text-align: right;
+}
+
+/*二维码充值*/
+#weChat #article{
+	padding: 0.5rem;
+	font-size:1.1rem;
+
+}
+#weChat #article div{
+	margin-top: 0.5rem;
+	border-radius: 5px;
+}
+#weChat #article span{
+	color: #9e9e9e;
+}
+#weChat #article .qrCode p{
+	padding-left: 0.4rem;
+	height: 2rem;
+	line-height: 2rem;
+}
+#weChat #article .money{
+	height: 2rem;
+	line-height: 2rem;
+	padding-left: 0.2rem;
+}
+#weChat #article .btnSure{
+	margin-top: 2rem;
+}
+#weChat #article .code{
+	height: 15rem;
+}
+#weChat #article .qrCode{
+	text-align: center;
+	padding: 0.4rem;
+	background: white;
+}
+#weChat #article .qrCode #qrCode{
+	height: 16rem;
+}
+#weChat #article .qrCode img{
+	width: 60%;
+}
+#weChat #article p{
+	line-height: 2rem;
+}
+#weChat #article .blankPay p{
+	line-height: 3rem;
+}
+#weChat #article .payError{
+	text-align: center;
+	display: none;
+	line-height: 10rem;
+	background: white;
+}
+
+#weChat .blankPay{
+	background: white;
+	padding-left: 0.4rem;
+}
+
+
+/*网银支付*/
+#ebank{
+	background: white;
+}
+#ebank #article{
+	background: white;
+	font-size: 1.1rem;
+	padding: 0.5rem;
+}
+#ebank #article section .wxMes{
+	border:  1px solid #dfdfdf;
+	margin-bottom: 2rem;
+}
+#ebank #article section .wxMes>div{
+	padding:.5rem;
+}
+#ebank #article section .wxMes>div span{
+	color: gray;
+}
+#ebank #article section .wxMes>div p{
+	height: 2rem;
+	line-height: 2rem;
+}
+#ebank #article section .wxMes>div div{
+	margin-left: 3.2rem;
+	color: gray;
+	line-height: 1.5rem;
+}
+
+#ebank #article section .wxMes>div a{
+	color: #217eec;
+	float: right;
+}
+
+#ebank #article section .wxMes>p{
+	border-bottom: 1px solid #dfdfdf;
+}
+#ebank #article section .wxMes>p{
+	padding:.6rem 1rem;
+	color: #e61d38;
+}
+
+#ebank #article section .payMes{
+	position: relative;
+	padding: 1rem;
+	border: 1px solid #b9b9b9;
+	border-radius: 5px;
+	margin-top: 2rem;
+	color: #333;
+}
+#ebank #article section .payMes p{
+	line-height: 3rem;
+}
+#ebank #article section .payMes input{
+	border: 1px solid #E0DDCF;
+	padding: 0.2rem 0.1rem ;
+}
+#ebank #article section #payMesTit{
+	font-size: 1.2rem;
+	position: absolute;
+	top: -1rem;
+	background: white;
+	padding: 0 0.5rem;
+	color: #e61d38;
+}
+/*合买记录*/
+.chooseHeType{
+	height: 2.5rem;line-height: 2.5rem;
+	background: white;
+	border-radius: 5px;
+	font-size: 1.1rem;
+}
+.chooseHeType span{
+	display: inline-block;
+	width: 49%;
+	color: gray;
+	text-align: center;
+}
+.chooseHeType span:first-of-type{
+	border-right: 1px solid #E3E3E3;
+}
+.chooseHeType .active{
+	color: #E34020;
+	border-bottom: #E34020 1px solid;
+}
+
+/*短消息*/
+#message #section{
+	position: relative;
+}
+.popup{
+	display: none;
+	box-shadow:0 0 2rem #ccc;
+	position: absolute;
+	background: white;
+	width: 8rem;
+	height: 5rem;
+	text-align: center;
+	line-height: 2.5rem;
+	z-index: 9999;
+}
+
+/*查看推广码*/
+.procode{
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	width: 80%;
+	margin: 2rem auto;
+	background: burlywood;
+	height: 10rem;
+	line-height: 10rem;
+	border-radius: 5px;
+}
+.copy{
+	border: 1px dotted #ddd;
+    font-size: .8rem;
+    padding: .1rem .3rem;
+    /* background: #ba142b; */
+    color:#fff;
+    box-shadow: 1px 1px 1px #8d8b8b;
+    margin-left:1rem ;
+}
+.copy.bgCol{
+	background: #ff8e00;
+}
+
+
+/*资金明细*/
+#fundDet #detailsType span{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	border: 1px solid #D3D3D3;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	border-right: 0;
+	color: #333333;
+}
+
+/*充值转账页面*/
+.codeBtn{
+	/* background: #ba142b; */
+    width: 12rem;
+    padding: .5rem;
+    color: #fff !important;
+    margin: .1rem;
+    float: right;
+    text-align: center;
+    /* border: 1px solid #ba142b; */
+    border-radius: .3rem;
+}
+/*弹出框*/
+.iDialogWrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.iDialogLayout {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-radial-gradient(center, rgba(0, 0, 0, 0.3), #000000 80%);
+	opacity: .4;
+}
+.iDialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #2B2B2B;
+	background: #FFFFFF;
+	z-index: 1000;
+	text-align: center;
+}
+.highZindex {
+	z-index: 20;
+}
+.iDialogWrap .close{
+	position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    font-size: 1.3rem;
+	width:32px;
+	height: 32px;
+	background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACrklEQVRYR82XTXLaQBCFX0silTiLqGIOgHd2WBjfwCwMlZ19AuMTBJ8g5gTBJwg+QbxLgRf4BoYFxjtzAHCJhZ1UIqlTM/xEFtJoJJOqaAkz3d90v+6eIaT8unbB/m293iU2bBBKcjujx+Q7Ofdnv+yMnDQmSWexdGq8OYZBNYBmTmM/7sHnVs7/caEDowQQjl1r4xMz1UGwdWCXaxgOETct9+lcBRIL0LGLJZjopnYcpmQ48FCuOINe1AEiATqbxRoIX1OdWJkVCF2cViaDVnjZCsDanQc9Mk7CEM8AZNgt3Kzt5FGGXOwF07EEkEo3396/OOdJ9Awn5z1uLYS5BGjnP5wR6HPS/nX8z+BGdXx7JmxJgO/2dsE0zZu40zP7R9XJ8LK9WWwR4VipN8ZFdTKotTd3DomMb5FrA1GQAFfvd+psGF/iDFfGg7+RUkDw3PnCTidf5Dib5PunBw/DpjTczhd7BOwmLV78HxWJsPOkQwHcq4xv90iG3zLvE3MbKqEgxMrJNfuI53pbdJXf3meY3UQAsSACQvwscr4Mu6bzmQC9MqVuPBHNJItzuYdxQpnKLwIi9UGkf25kAgjnXApZo0RX5xQ3KFmtz7dFOVdVh1JbIgVpRBipdgDBAZMmElKEumWoLDVFiaoiIMtQpxFp1XlKCAb61fGgNAdQD6JgK1aqPQSh3YqT0iBydTC+u9YSrO/XKw/Dc6W2GFPP80ofnbvR/zGOhQ7mF5IRCO+02nLWRYxpznssrFxI5FhOMxeyAsRdyTL38zQgSZfSfwoRM8RiHyYyHWxevlgTjCmRdyiqKCpYiU+zX9ZGPetlVUy7V+5TM9PTLEg7u7QadSbaV13dZiMefWK+9jy/Keo8SSJar+MwjGWhAJ9KvkHywWr47MDgnutipOM0aO8P+tOTWthlv4IAAAAASUVORK5CYII=') no-repeat;
+	cursor:pointer;
+	/*background-size: 80%;*/
+}
+/*签到*/
+#userSign{
+	background: white;
+}
+#userSign #section{
+	background: white;
+	padding: 1.5rem;
+}
+#userSign #section #signDays li{
+	float: left;
+	margin:0 0.5rem;
+}
+#userSign #section #signDays li div{
+	text-align: center;
+	font-size: .8rem;
+	color: gray;
+}
+#userSign #section .signBtn{
+	margin-left: 75%;
+	width: 20%;
+	border: 0;
+	color: white;
+	background: #ef7163;
+	padding: .2rem;
+	margin-bottom: 1rem;
+}
+#userSign #section .extraReward{
+	margin-top: 1rem;
+	border: 1px solid #E3E3E3;
+	border-radius: 5px;
+	padding: 1rem;
+}
+#userSign #section .extraReward h4{
+	margin-bottom: .5rem;
+}
+#userSign #section .extraReward p{
+	color: gray;
+}
+#userSign #section .extraReward p span{
+	color: #ef7163;
+	margin: 0 0.2rem;
+}
+
+.logOut {
+  margin: 0 auto;
+  text-align: center;
+}
+.logOut a{
+  margin: 0 auto;
+  text-align: center;
+  width: 10rem;
+  padding: 2rem 0;
+
+}
+
+.logOut a span{
+  margin-top: 3rem;
+  background: red;
+  padding: 1rem 0;
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.bindCard #article form section #name,.bindCard #article form section p {
+  padding: .5rem ;
+}
+
+.bindCard #article form section #name span,.bindCard #article form section #info p span{
+  display: inline-block;
+  float: left;
+  width: 28%;
+  text-align: right;
+}
+
+.bindCard #article form section #name input,.bindCard #article form section #info p input{
+  border: 0;
+  outline: none;
+  text-indent: .5rem;
+}
+
+
+
+#article{
+    margin-top: 44px;
+}
+
+
+#footFD .show{
+    background: linear-gradient(to bottom, #000000, #575956);
+    color: #fff;
+}
+#footFD .select,#footFD .selectType{
+    background: #50504f;
+}
+#footFD .select li,#footFD .selectType li{
+   color: #fff;
+}
+#depFile #article .userInfo{
+    background: rgba(38, 42, 56, 0.6);
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#depFile #article section .navMes{
+    background: rgba(38, 42, 56, 0.6);
+    margin: 0 15px;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+#container #depFile #article .navMes .nav:last-child{
+    border: none;
+}

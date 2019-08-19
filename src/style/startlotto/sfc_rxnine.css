@@ -1,0 +1,133 @@
+/*头部*/
+
+#header>img {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    margin-top: -11px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+/*内容部分*/
+
+.inner {
+    padding: 1rem .6rem;
+    box-sizing: border-box;
+}
+
+.p1 {
+    text-align: center;
+    font-size: .9rem;
+    color: #999999;
+}
+
+/*.p2{*/
+
+/*text-align: center;*/
+
+/*line-height: 2rem;*/
+
+/*margin: 1rem 0;*/
+
+/*}*/
+
+/*.p2>span{*/
+
+/*width: 5.4%;*/
+
+/*display: inline-block;*/
+
+/*text-align: center;*/
+
+/*background-color: #24b724;*/
+
+/*color: white;*/
+
+/*border-radius: 2px;*/
+
+/*}*/
+
+.table1 {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.table1 tr>td {
+    width: 6%;
+    text-align: center;
+    vertical-align: top;
+    font-size: .9rem;
+}
+
+.table1 tr>td>span {
+    background-color: #24b724;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 3px;
+}
+
+table.table2 tr>td:nth-child(even) {
+    background-color: #f5f1f1;
+}
+
+.selTool {
+    height: 2.4rem;
+    color: #333;
+    line-height: 2.4rem;
+}
+
+.sel_item {
+    text-align: center;
+}
+
+.bage {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border: 3px solid #333;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+table.table2 tr>td {
+    width: 6%;
+    text-align: center;
+    padding: 7px 2px 10px 2px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: .9rem;
+    border: 1px solid #ccc;
+}
+
+.bouns {
+    margin-top: 1rem;
+}
+
+table.prize {
+    width: 100%;
+}
+
+table.prize th {
+    color: #999;
+}
+
+table.prize th,
+table.prize td {
+    width: 33%;
+    height: 35px;
+    text-align: center;
+}
+
+#noMessage {
+    margin: 19%;
+    text-align: center;
+    color: #3F3F3F;
+    line-height: 1rem;
+    font-size: 1rem;
+    display: none;
+}

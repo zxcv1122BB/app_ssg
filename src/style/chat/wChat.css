@@ -1,0 +1,50 @@
+article{
+	position: relative;
+	height: 610px;
+}
+#mores {
+	z-index: 999;
+	position: absolute;
+	top: 2.6rem;
+	right: 0;
+	background: white;
+	display: none;
+}
+#wChat .background_gray{
+	position: absolute;
+	display: none;
+	top: 0rem;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: white;
+	z-index: 99;
+	padding-top: 2rem !important;
+}
+#wChat .background_gray p{
+	padding-left: 1rem;
+	color: gray;
+}
+#wChat ul li{
+	/*line-height: 3rem;*/
+	padding-left: 1rem;
+}
+
+#wChat .mui-table-view-cell{
+	padding: .5rem 1rem;
+}
+
+.background_gray ul {
+	margin: .5rem;
+	border-bottom: 1px #D3D3D3 solid;
+}
+
+.background_gray ul li {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2rem;
+}
+.background_gray ul li img{
+	 width: 2.5rem;
+}

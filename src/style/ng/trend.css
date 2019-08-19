@@ -1,0 +1,138 @@
+/*#article1,#article2{
+	display: none;
+}*/
+
+#article {
+    overflow: auto;
+    position: relative;
+    margin-top: 2.67rem;
+}
+
+body {
+    padding-bottom: 0;
+    overflow: auto;
+}
+
+#form {
+    /* position: relative; */
+    overflow-x: auto;
+    z-index: 10;
+}
+
+.dingweiDan {
+    color: #9198ab;
+}
+
+#article0 .dingweiDan {
+    width: 100%;
+}
+
+.dingweiDan th {
+    background: #D0D0D0;
+}
+
+.dingweiDan tr:nth-of-type(even) {
+    background: #E3E3E3;
+}
+
+.dingweiDan tr td,
+.dingweiDan tr th {
+    text-align: center;
+    height: 2rem;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    width: 3rem;
+    position: relative;
+    z-index: 10;
+    /*margin: 0 .8rem;*/
+}
+
+#article1 tr td:first-of-type {
+    white-space: nowrap;
+}
+
+.guessYes1 {
+    color: white;
+    background: url(../../assets/images/yuan_back1.png) no-repeat center;
+    background-size: 1.8rem;
+}
+.guessYes2 {
+    color: white;
+    background: url(../../assets/images/yuan_back2.png) no-repeat center;
+    background-size: 1.8rem;
+}
+.guessYes3 {
+    color: white;
+    background: url(../../assets/images/yuan_back3.png) no-repeat center;
+    background-size: 1.8rem;
+}
+.guessYes4 {
+    color: white;
+    background: url(../../assets/images/yuan_back4.png) no-repeat center;
+    background-size: 1.8rem;
+}
+.guessYes5 {
+    color: white;
+    background: url(../../assets/images/yuan_back5.png) no-repeat center;
+    background-size: 1.8rem;
+}
+
+.fixed_bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background: white;
+    z-index: 20;
+}
+
+.fixed_bottom table,
+.fixed_bottom p {
+    margin: 0;
+}
+
+.fixed_bottom td {
+    background: #E3E3E3;
+    padding: .4rem 0;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+    width: 15rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.fixed_bottom p {
+    margin: 0;
+    /*background: white;*/
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    font-size: .8rem;
+    background: #424242;
+    color: #fff;
+}
+
+.fixed_bottom p span {
+    color: red;
+}
+
+.chooseYes {
+    background: #ff8787;
+    color: white;
+}
+
+.sel {
+    width: 6rem;
+}
+
+#total tr td {
+    background: #edffd1;
+}
+
+/*#myCanvas{
+	min-width: 510px;
+	max-height: 758px;
+}*/
+.play_head ul li{
+    margin-right: .5rem;
+}

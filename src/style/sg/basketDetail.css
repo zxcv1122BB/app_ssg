@@ -1,0 +1,439 @@
+body {
+    background: #efeff4;
+}
+/*
+header {
+    position: relative;
+    height: 3.2rem;
+    background: #ba142b;
+} */
+
+header .back {
+    float: left;
+}
+
+header .back a {
+    display: block;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+header .back img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+    width: 0.6rem;
+    height: 1.2rem;
+}
+
+header h1 {
+    line-height: 3.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header .search {
+    float: right;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+header .search img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+    width: 1.4rem;
+    height: 1.6rem;
+}
+
+#basket {
+    margin-top: 3.8rem;
+}
+
+.nav_bar ul {
+    height: 2.66rem;
+    background: #e7e7e7;
+    display: flex;
+}
+
+.nav_bar ul li {
+    float: left;
+    text-align: center;
+    line-height: 2.66rem;
+    width: 25%;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: #1f1f1f;
+}
+
+.nav_bar ul li:nth-of-type(4) {
+    width: 30%;
+}
+
+.nav_bar ul li.active {
+    box-sizing: border-box;
+    border-bottom: 2px solid darkred;
+}
+
+.team_info {
+    display: flex;
+}
+
+.team_info div {
+    flex: 1;
+    text-align: center;
+}
+
+.team_info .t_name {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #3c3f47;
+}
+
+.team_info .f_group {
+    padding: 0.8rem 0 0 0;
+    height: 70px;
+    line-height: 70px;
+}
+
+.team_info .deep {
+    font-size: 0.8rem;
+    color: #999;
+    line-height: 1.6rem;
+}
+
+.team_info .fb {
+    font-size: 1.8rem;
+    font-size: bold;
+}
+
+.tab_body {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.tab_body .inner_box {
+    width: 500%;
+    position: relative;
+    left: 0;
+}
+
+.tab_body .inner_box::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.tab_body .inner_box .tab_item {
+    width: 20%;
+    float: left;
+}
+
+.tab_body .inner_box .league_list {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.tab_body .inner_box .league_item {
+    width: 30%;
+    text-align: center;
+    background: #fff;
+    line-height: 2.4rem;
+    margin-bottom: .5rem;
+}
+
+.tab_body .inner_box .league_item p {
+    margin: 0;
+}
+
+.tab_body .inner_box .league_item p a {
+    color: #333;
+    font-size: .8rem;
+}
+
+.tab_body .inner_box .league_item img {
+    width: 1.5rem;
+    height: 1.4rem;
+    vertical-align: middle;
+}
+
+.item-top {
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    background: #faf7f7;
+    line-height: 2.6rem;
+    position: relative;
+    color: #8A765A;
+}
+
+.item-top span {
+    color: #8A765A;
+}
+
+.item-top img {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.item_bottom {
+    background: #faf7f7;
+}
+
+.player ul {
+    display: flex;
+}
+
+.player li {
+    flex: 1;
+    margin: 0 3.5rem;
+}
+
+.match table {
+    background: #faf7f7;
+    width: 100%;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.match tr {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+}
+
+.match th {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.match td {
+    font-size: 1rem;
+    color: #666;
+}
+
+.match .tec li {
+    display: flex;
+    background: #fff;
+    line-height: 2.4rem;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.match .tec li p {
+    flex: 1;
+    text-align: center;
+    color: #8A765A;
+    font-weight: 600;
+}
+
+.history {
+    line-height: 2.4rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    background: #faf7f7;
+}
+
+.history .dot {
+    width: 6px;
+    height: 6px;
+    display: block;
+    border-radius: 6px;
+    margin: 5px;
+    margin-top: 1rem;
+    background: #000;
+    float: left;
+}
+
+.history .tex {
+    float: left;
+    line-height: 2.4rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.military table {
+    width: 100%;
+    text-align: center;
+    background: #faf7f7;
+    line-height: 2.4rem;
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.military tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.military thead {
+    color: #999;
+}
+
+.military .merge {
+    display: flex;
+}
+
+.military .merge span {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.military .merge .red {
+    color: #FF6868;
+}
+
+.military .merge .green {
+    color: #96FF68;
+}
+
+.military .league {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.2rem;
+}
+
+.team table {
+    width: 100%;
+    text-align: center;
+    background: #faf7f7;
+    line-height: 2.4rem;
+}
+
+.team tr {
+    border-bottom: 1px solid #ccc;
+    font-size: 0.8rem;
+}
+
+.team thead {
+    color: #999;
+}
+
+.tool {
+    height: 3.2rem;
+    padding: 0.4rem 1rem;
+    position: relative;
+    background: #faf7f7;
+    border-radius: 5px;
+}
+
+.tool ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.tool ul li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.tool ul li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tool ul li {
+    line-height: 2.1rem;
+    display: inline-block;
+    padding: 0 .8rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+.tool ul .active {
+    /* color: #ba142b; */
+    background: white;
+}
+
+.odds_model table {
+    background: #faf7f7;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.odds_model table thead {
+    color: #999;
+}
+
+.odds_model table th,
+.odds_model table td {
+    border: 1px solid #ccc;
+}
+
+.odds_model table td:first-child {
+    width: 20%;
+}
+
+.odds_model table td {
+    font-size: 0.9rem;
+    line-height: 2.2rem;
+}
+
+.odds_model table.sf td {
+    width: 20%;
+}
+
+.odds_model table.rf td {
+    width: 13%;
+}
+
+.odds_model table.rf td:first-child {
+    width: 20%;
+}
+
+.odds_model table.dxf td {
+    width: 13%;
+}
+
+.odds_model table.dxf td:first-child {
+    width: 20%;
+}
+
+.rote {
+    transform: rotate(180deg);
+}
+
+.red {
+    color: #FF6868;
+}
+
+.green {
+    color: #96FF68;
+}
+
+.mask p {
+    transform: translate(-50%, -50%);
+    font-family: "楷体";
+    font-size: 1.4rem;
+}
+
+.noData {
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 1rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    border-bottom: 1px solid #787878;
+}
+
+#container{
+  margin-top: 0;
+}

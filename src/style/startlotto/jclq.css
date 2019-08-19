@@ -1,0 +1,287 @@
+[v-cloak] {
+    display: none;
+}
+
+/*头部*/
+#pullrefresh{
+  margin-bottom: 2.9rem;
+}
+#header>img {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    margin-top: -11px;
+}
+
+/* #selectDate {
+    position: absolute;
+    right: .8rem;
+    top: 50%;
+    margin-top: -10px;
+    color: white;
+} */
+
+/* #trigger1 {
+    position: absolute;
+    right: .8rem;
+    top: 50%;
+    margin-top: -10px;
+    color: white;
+} */
+
+.date-list {
+    position: absolute;
+    right: 1rem;
+    color: #999;
+    z-index: 2;
+    padding: 0 8px;
+    background-color: white;
+    box-sizing: border-box;
+    border-left: 2px solid #999;
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    display: none;
+}
+
+.date-list>li {
+    line-height: 28px;
+    border-bottom: 1px solid #999;
+}
+
+.date-list>li>a {
+    color: #999;
+}
+
+.selTool {
+    height: 2.4rem;
+    background: #f9f6f6;
+    ;
+    color: #333;
+    line-height: 2.4rem;
+}
+
+.sel_item {
+    text-align: center;
+}
+
+.bage {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border: 3px solid #333;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+/*轮播*/
+
+#lunbo img {
+    width: 100%;
+}
+
+/*底部动态图开始*/
+
+.gifPic {
+    z-index: 999;
+}
+
+.gifPic>img {
+    position: fixed;
+    right: 30px;
+    bottom: 6rem;
+    /*width: 100px;*/
+    width: 4rem;
+}
+
+/*底部动态图结束*/
+
+/* 期次,时间筛选栏 */
+
+/*列表设置*/
+
+.inner {}
+
+.inner-date {
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    position: relative;
+}
+
+.inner-date>i {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.inner-list {
+    background-color: #f9f6f6;
+}
+
+.inner-list>li {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: .9rem;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.inner-list>li>span {
+    position: absolute;
+    color: #CCCCCC;
+    top: 50%;
+    margin-top: -10px;
+    right: 14px;
+}
+
+.li-top {
+    width: 94%;
+}
+
+.li-top-left {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 4px 0;
+    box-sizing: border-box;
+    color: #867260;
+}
+
+.li-top-right {
+    float: left;
+    width: 75%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.li-top-right>div {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+.li-top-right>div:first-child {
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.li-top-right>div:last-child {
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.li-bottom {
+    padding: 4px;
+    box-sizing: border-box;
+    border-top: 1px solid #efe9e9;
+    width: 94%;
+    display: flex;
+}
+
+.li-bottom>div {
+    float: left;
+    width: 19%;
+    text-align: center;
+    border-right: 1px solid #efecec;
+    flex: 1;
+}
+
+.li-bottom>div:last-child {
+    border-right: none;
+}
+
+/*底部按钮开始*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+}
+
+.footer>a {
+    /* background-color: #d91d37; */
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: .3rem 0;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+/*底部按钮结束*/
+
+/*设置弹出的日期插件部分样式*/
+
+.df-box {
+    line-height: 40px !important;
+    width: 75% !important;
+}
+
+.df-ok {
+    background-color: red;
+    color: white;
+}
+
+#noMessage {
+    margin: 19%;
+    text-align: center;
+    color: #3F3F3F;
+    line-height: 1rem;
+    font-size: 1rem;
+    display: none;
+}
+
+.match-divider.close .arrow-ico {
+    transform: rotate(-135deg);
+}
+
+.match-divider .arrow-ico {
+    transform: rotate(45deg);
+}
+
+.arrow-ico {
+    width: 1.47rem;
+    height: 1.47rem;
+    right: .2rem;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg);
+    transition: all 0.3s linear;
+}
+
+.arrow-ico:before,
+.arrow-ico:after {
+    height: 50%;
+    width: .2rem;
+    background-color: #9a8f72;
+    content: '';
+    display: block;
+    position: relative;
+    top: 35%;
+    left: 35%;
+}
+
+.arrow-ico:before {
+    height: .2rem;
+    width: 65%;
+    padding-left: .2rem;
+}
+
+.match-divider,
+.match-foldBtn:before,
+.match-foldBtn:after {
+    color: #8d8883;
+}

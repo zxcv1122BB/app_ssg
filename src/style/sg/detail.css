@@ -1,0 +1,1196 @@
+    /*头部*/
+
+    body {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .header {
+      font-size: .9rem;
+      overflow: hidden;
+      padding: 10px;
+      box-sizing: border-box;
+      background: #ececec;
+    }
+
+    .header>div {
+      display: inline-block;
+      width: 32%;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .header-left>p:nth-child(2),
+    .header-right>p:nth-child(2) {
+      font-size: 1.1rem;
+      font-weight: bolder;
+      color: #3c3f47;
+    }
+
+    .header-left>p:nth-child(3),
+    .header-right>p:nth-child(3) {
+      color: #9b9fa5;
+    }
+
+    .header-center>p:first-child {
+      line-height: 4rem;
+      font-size: 3rem;
+    }
+
+    .header-center>p:nth-child(2) {
+      line-height: 2rem;
+      color: #8a765a;
+    }
+
+    .header-center>p:last-child {
+      font-size: .84rem;
+      color: #8a765a;
+    }
+
+    /*导航部分*/
+
+    .nav {
+      font-size: 1.1rem;
+      color: #1f1f1f;
+      /*background-color: rgba(231, 231, 231, 1);*/
+    }
+
+    .nav-list {
+      background-color: rgba(231, 231, 231, 1);
+    }
+
+    .nav-list>li {
+      float: left;
+      width: 25%;
+      text-align: center;
+      line-height: 2.5rem;
+    }
+
+    .nav-list>li:first-child {
+      border-bottom: 2px solid darkred;
+    }
+
+    .inner-ul {
+      display: block;
+    }
+
+    .inner-zhanji {
+      display: none;
+    }
+
+    .inner-jifen {
+      display: none;
+    }
+
+    .li-top {
+      text-align: center;
+      border-bottom: 1px solid #CCCCCC;
+      background-color: white;
+      line-height: 2.6rem;
+      position: relative;
+    }
+
+    .li-top>span {
+      color: #8A765A;
+    }
+
+    .li-top>img {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      margin-top: -15px;
+    }
+
+    .li-bottom {
+      display: none;
+      background-color: #faf7f7;
+    }
+
+    .li-bottom>p {
+      text-align: center;
+      line-height: 2.3rem;
+      border-bottom: 1px solid #ccc;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .li-bottom>p>img {
+      vertical-align: middle;
+    }
+
+    .li-bottom .inj_list .team_name {
+      text-align: center;
+      line-height: 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: red;
+    }
+
+    .li-bottom .event_item::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .li-bottom .event_item .home,
+    .li-bottom .event_item .time,
+    .li-bottom .event_item .away {
+      float: left;
+      line-height: 34px;
+      height: 34px;
+    }
+
+    .li-bottom .event_item .home {
+      text-align: right;
+      width: 45%;
+      padding-right: 20px;
+    }
+
+    .li-bottom .event_item .away {
+      text-align: left;
+      width: 45%;
+      padding-left: 20px;
+    }
+
+    /* 伤停信息样式 */
+
+    .sub {
+      padding: 1rem;
+    }
+
+    .sub span {
+      display: inline-block;
+      text-align: center;
+      color: #9B9FA5;
+    }
+
+    .sub span:nth-child(1) {
+      width: 14%;
+    }
+
+    .sub span:nth-child(2) {
+      width: 30%;
+    }
+
+    .sub span:nth-child(3) {
+      width: 20%;
+    }
+
+    .sub span:nth-child(4) {
+      width: 30%;
+    }
+
+    .has_data {
+      padding-bottom: 1rem;
+    }
+
+    .player_info {
+      position: relative;
+      padding: 1rem 0;
+    }
+
+    .player_info>img {
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      right: 20px;
+    }
+
+    .player_info>span {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .player_info>span:nth-child(1) {
+      width: 14%;
+    }
+
+    .player_info>span:nth-child(2) {
+      width: 30%;
+    }
+
+    .player_info>span:nth-child(3) {
+      width: 20%;
+    }
+
+    .player_info>span:nth-child(4) {
+      width: 30%;
+    }
+
+    .pause {
+      text-align: center;
+      line-height: 2.2rem;
+    }
+
+    .detail {
+      background-color: #44464f;
+      color: #c4c4c5;
+      box-sizing: border-box;
+      font-size: 1rem;
+      overflow: hidden;
+      text-indent: 1rem;
+      display: none;
+    }
+
+    .detail>p {
+      line-height: 2.4rem;
+    }
+
+    .tongji-left {
+      float: left;
+      width: 35%;
+      text-align: center;
+      line-height: 2.4rem;
+      color: #666;
+    }
+
+    .tongji-left>p {
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .tongji-center {
+      float: left;
+      width: 30%;
+      text-align: center;
+      line-height: 2.4rem;
+      background-color: white;
+      color: #8A765A;
+      font-weight: 600;
+    }
+
+    .tongji-center>p {
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .tongji-right {
+      float: left;
+      width: 35%;
+      text-align: center;
+      line-height: 2.4rem;
+      color: #666;
+    }
+
+    .tongji-right>p {
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    /* 伤停信息样式 */
+
+    .inj_item {}
+
+    /* 阵容详情样式*/
+
+    .battle {}
+
+    .battle::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .battle .battle_home {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      /* border: 1px solid #ccc; */
+      margin-top: -1px;
+    }
+
+    .battle .battle_away {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      /* border: 1px solid #ccc; */
+      margin-top: -1px;
+    }
+
+    .battle .battle_home p,
+    .battle .battle_away p {
+      text-align: center;
+      line-height: 2.4rem;
+      font-weight: 900;
+      border-bottom: 1px solid #ccc;
+      background: #d4d5d8;
+    }
+
+    .battle .battle_home li,
+    .battle .battle_away li {
+      text-align: center;
+      line-height: 2.2rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .battle .battle_home li .position,
+    .battle .battle_away li .position {
+      text-align: center;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      float: left;
+      width: 30%;
+    }
+
+    .battle .battle_home li .player_name,
+    .battle .battle_away li .player_name {
+      text-align: center;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      float: left;
+      width: 70%;
+      text-align: left;
+      text-indent: 1.2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /*战绩样式*/
+
+    .zhanji-title {
+      font-size: .9rem !important;
+      font-weight: 600 !important;
+      text-align: left !important;
+      text-indent: 1rem;
+      color: #3C3F47;
+    }
+
+    .zhanji-nav>span {
+      display: block;
+      float: left;
+      text-align: center;
+      font-size: .9rem;
+      color: #666666;
+    }
+
+    .zhanji-nav>span:nth-child(1) {
+      width: 16%;
+    }
+
+    .zhanji-nav>span:nth-child(2) {
+      width: 24%;
+    }
+
+    .zhanji-nav>span:nth-child(3) {
+      width: 20%;
+    }
+
+    .zhanji-nav>span:nth-child(4) {
+      width: 10%;
+    }
+
+    .zhanji-nav>span:nth-child(5) {
+      width: 20%;
+    }
+
+    .zhanji-nav>span:nth-child(6) {
+      width: 10%;
+    }
+
+    .zhanji-list>li {
+      line-height: 2.2rem;
+      overflow: hidden;
+    }
+
+    .zhanji-list>li:nth-of-type(odd) {
+      background-color: #FFFFFF;
+    }
+
+    .zhanji-list>li:nth-of-type(even) {
+      background-color: #eceaea;
+    }
+
+    .zhanji-list>li>span {
+      display: block;
+      float: left;
+      text-align: center;
+      font-size: .7rem;
+      color: #666666;
+    }
+
+    .zhanji-list>li>span:nth-child(1) {
+      width: 16%;
+    }
+
+    .zhanji-list>li>span:nth-child(2) {
+      width: 24%;
+    }
+
+    .zhanji-list>li>span:nth-child(3) {
+      width: 20%;
+    }
+
+    .zhanji-list>li>span:nth-child(4) {
+      width: 10%;
+    }
+
+    .zhanji-list>li>span:nth-child(5) {
+      width: 20%;
+    }
+
+    .zhanji-list>li>span:nth-child(6) {
+      width: 10%;
+    }
+
+    /*积分样式*/
+
+    .inner-jifen>p {
+      line-height: 2.3rem;
+      background-color: #f6f2f2;
+      font-size: 1rem;
+    }
+
+    .blackDot {
+      display: inline-block;
+      width: .5rem;
+      height: .5rem;
+      margin: 0 .5rem;
+      border-radius: .5rem;
+      background-color: #000;
+    }
+
+    .inner-jifen>p:first-child {
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .inner-jifen>p:last-child {
+      border-bottom: 1px solid #CCCCCC;
+      border-top: 1px solid #CCCCCC;
+      overflow: hidden;
+    }
+
+    .inner-jifen>p:last-child>span {
+      display: block;
+      float: left;
+      width: 33.3%;
+      text-align: center;
+    }
+
+    .inner-jifen>p:nth-child(2)>span {
+      display: block;
+      float: left;
+      color: #9B9FA5;
+    }
+
+    .jifen-span1 {
+      width: 13%;
+      text-align: center;
+    }
+
+    .jifen-span2 {
+      width: 20%;
+      text-align: center;
+    }
+
+    .jifen-span3 {
+      width: 15%;
+      text-align: center;
+    }
+
+    .jifen-span4 {
+      width: 10%;
+      text-align: center;
+    }
+
+    .jifen-span5 {
+      width: 10%;
+      text-align: center;
+    }
+
+    .jifen-span6 {
+      width: 10%;
+      text-align: center;
+    }
+
+    .jifen-span7 {
+      width: 10%;
+      text-align: center;
+    }
+
+    .jifen-span8 {
+      width: 12%;
+      text-align: center;
+    }
+
+    .jifen-ul>li {
+      overflow: hidden;
+      line-height: 2.2rem;
+      background: #ffcccc;
+    }
+
+    .jifen-ul>li>span {
+      display: block;
+      float: left;
+      text-align: center;
+      color: #3C3F47;
+      font-size: 1rem;
+    }
+
+    .jifen-ul>li>span:nth-child(1) {
+      width: 13%;
+    }
+
+    .jifen-ul>li>span:nth-child(2) {
+      width: 20%;
+    }
+
+    .jifen-ul>li>span:nth-child(3) {
+      width: 15%;
+    }
+
+    .jifen-ul>li>span:nth-child(4) {
+      width: 10%;
+    }
+
+    .jifen-ul>li>span:nth-child(5) {
+      width: 10%;
+    }
+
+    .jifen-ul>li>span:nth-child(6) {
+      width: 10%;
+    }
+
+    .jifen-ul>li>span:nth-child(7) {
+      width: 10%;
+    }
+
+    .jifen-ul>li>span:nth-child(8) {
+      width: 12%;
+    }
+
+    .jifen-ul>li:nth-of-type(odd) {
+      background-color: #FFFFFF;
+    }
+
+    .jifen-ul>li:nth-of-type(even) {
+      background-color: #eceaea;
+    }
+
+    .dot {
+      width: 1.5rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      -webkit-border-radius: 1rem;
+      border-radius: 1rem;
+      display: inline-block;
+      margin: 0 1rem;
+      color: #fff;
+      /*vertical-align: middle;*/
+    }
+
+    .redDot {
+      width: 1rem;
+      height: 1rem;
+      line-height: 1.5rem;
+      border-radius: 1rem;
+      display: inline-block;
+      /*margin: 0 1rem;*/
+      color: #fff;
+      vertical-align: middle;
+    }
+
+    /*赔率样式*/
+
+    .inner-peilv {
+      background-color: #F6F2F2;
+      /* display: none; */
+    }
+
+    .inner-peilv>p {
+      overflow: hidden;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: .3rem auto .6rem auto;
+      font-size: 1rem;
+    }
+
+    .inner-peilv>p>a {
+      display: block;
+      float: left;
+      width: 33%;
+      text-align: center;
+      line-height: 2.1rem;
+      border-right: 1px solid #ccc;
+    }
+
+    .inner-peilv>p>a:last-child {
+      border-right: none;
+    }
+
+    .odd_active {
+      background-color: white;
+      /* color: #ba142b; */
+    }
+
+    .peilv-oupei {
+      border: 1px solid #CCCCCC;
+    }
+
+    .peilv-title {
+      line-height: 2.2rem;
+    }
+
+    .peilv-title>span {
+      text-align: center;
+      display: block;
+      float: left;
+      color: #9B9FA5;
+      font-size: 1rem;
+    }
+
+    .peilv-title>span:nth-child(1) {
+      width: 19%;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-title>span:nth-child(2) {
+      width: 40%;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-title>span:nth-child(3) {
+      width: 40%;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-list>li {
+      overflow: hidden;
+      line-height: 2.2rem;
+      font-size: .9rem;
+      color: #3C3F47;
+    }
+
+    .peilv-list>li:nth-of-type(odd) {
+      background-color: #e4e1e1;
+    }
+
+    .peilv-list>li>p {
+      float: left;
+    }
+
+    .peilv-list>li>p:nth-child(1) {
+      width: 19%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .peilv-list>li>p:nth-child(2) {
+      width: 40%;
+      border-right: 1px solid #CCCCCC;
+      overflow: hidden;
+    }
+
+    .peilv-list>li>p:nth-child(3) {
+      width: 40%;
+      overflow: hidden;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span {
+      display: block;
+      float: left;
+      text-align: center;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(1) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(2) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(3) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span {
+      display: block;
+      float: left;
+      text-align: center;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(1) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(2) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(3) {
+      width: 33.3%;
+    }
+
+    /*亚盘*/
+
+    .peilv-yapan {
+      border: 1px solid #CCCCCC;
+    }
+
+    .peilv-title {
+      line-height: 2.2rem;
+    }
+
+    .peilv-title>span {
+      text-align: center;
+      display: block;
+      float: left;
+      color: #9B9FA5;
+      font-size: 1rem;
+    }
+
+    .peilv-title>span:nth-child(1) {
+      width: 19%;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-title>span:nth-child(2) {
+      width: 40%;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-title>span:nth-child(3) {
+      width: 40%;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-list>li {
+      overflow: hidden;
+      line-height: 2.2rem;
+      font-size: .9rem;
+      color: #3C3F47;
+    }
+
+    .peilv-list>li:nth-of-type(odd) {
+      background-color: #e4e1e1;
+    }
+
+    .peilv-list>li>p {
+      float: left;
+    }
+
+    .peilv-list>li>p:nth-child(1) {
+      width: 19%;
+      text-align: center;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .peilv-list>li>p:nth-child(2) {
+      width: 40%;
+      border-right: 1px solid #CCCCCC;
+      overflow: hidden;
+    }
+
+    .peilv-list>li>p:nth-child(3) {
+      width: 40%;
+      overflow: hidden;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span {
+      display: block;
+      float: left;
+      text-align: center;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(1) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(2) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(3) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span {
+      display: block;
+      float: left;
+      text-align: center;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(1) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(2) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(3) {
+      width: 33.3%;
+    }
+
+    /*大小盘*/
+
+    .peilv-daxiaopan {
+      border: 1px solid #CCCCCC;
+    }
+
+    .peilv-title {
+      line-height: 2.2rem;
+    }
+
+    .peilv-title>span {
+      text-align: center;
+      display: block;
+      float: left;
+      color: #9B9FA5;
+      font-size: 1rem;
+    }
+
+    .peilv-title>span:nth-child(1) {
+      width: 19%;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-title>span:nth-child(2) {
+      width: 40%;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-title>span:nth-child(3) {
+      width: 40%;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .peilv-list>li {
+      overflow: hidden;
+      line-height: 2.2rem;
+      font-size: .9rem;
+      color: #3C3F47;
+    }
+
+    .peilv-list>li:nth-of-type(odd) {
+      background-color: #e4e1e1;
+    }
+
+    .peilv-list>li>p {
+      float: left;
+    }
+
+    .peilv-list>li>p:nth-child(1) {
+      width: 19%;
+      text-align: center;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .peilv-list>li>p:nth-child(2) {
+      width: 40%;
+      border-right: 1px solid #CCCCCC;
+      overflow: hidden;
+    }
+
+    .peilv-list>li>p:nth-child(3) {
+      width: 40%;
+      overflow: hidden;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span {
+      display: block;
+      float: left;
+      text-align: center;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(1) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(2) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(2)>span:nth-child(3) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span {
+      display: block;
+      float: left;
+      text-align: center;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(1) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(2) {
+      width: 33.3%;
+    }
+
+    .peilv-list>li>p:nth-child(3)>span:nth-child(3) {
+      width: 33.3%;
+    }
+
+    /*交易盈亏*/
+
+    .peilv-yingkui {
+      display: none;
+    }
+
+    .yingkui-title {
+      font-size: 1.1rem;
+      line-height: 2.1rem;
+      text-indent: .6rem;
+      color: #3C3F47;
+    }
+
+    .yingkui-inner {
+      border-top: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .inner-1>span {
+      display: block;
+      float: left;
+      text-align: center;
+      color: #9B9FA5;
+      line-height: 2.1rem;
+      font-size: 1rem;
+    }
+
+    .inner-1>span:nth-child(1) {
+      width: 12%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1>span:nth-child(2) {
+      width: 15%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1>span:nth-child(3) {
+      width: 24%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1>span:nth-child(4) {
+      width: 24%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1>span:nth-child(5) {
+      width: 23%;
+    }
+
+    .inner-1-inner>li {
+      overflow: hidden;
+      color: #3C3F47;
+      font-size: .93rem;
+    }
+
+    .inner-1-inner>li>span {
+      display: block;
+      float: left;
+      text-align: center;
+      line-height: 2.1rem;
+    }
+
+    .inner-1-inner>li>span:nth-child(1) {
+      width: 12%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1-inner>li>span:nth-child(2) {
+      width: 15%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1-inner>li>span:nth-child(3) {
+      width: 24%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1-inner>li>span:nth-child(4) {
+      width: 24%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-1-inner>li>span:nth-child(5) {
+      width: 23%;
+    }
+
+    .inner-1-inner>li:nth-of-type(odd) {
+      background-color: rgba(231, 231, 231, 1);
+    }
+
+    .inner-2>span {
+      display: block;
+      float: left;
+      text-align: center;
+      color: #9B9FA5;
+    }
+
+    .inner-2>span:nth-child(1) {
+      width: 12%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-2>span:nth-child(2) {
+      width: 28.5%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-2>span:nth-child(3) {
+      width: 28.5%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-2>span:nth-child(4) {
+      width: 28.5%;
+    }
+
+    .inner-2-inner>li {
+      overflow: hidden;
+      font-size: .93rem;
+      color: #3C3F47;
+    }
+
+    .inner-2-inner>li>span {
+      display: block;
+      float: left;
+      line-height: 2.1rem;
+      text-align: center;
+    }
+
+    .inner-2-inner>li>span:nth-child(1) {
+      width: 12%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-2-inner>li>span:nth-child(2) {
+      width: 28.5%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-2-inner>li>span:nth-child(3) {
+      width: 28.5%;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    .inner-2-inner>li>span:nth-child(4) {
+      width: 28.5%;
+    }
+
+    .inner-2-inner>li:nth-of-type(odd) {
+      background-color: rgba(231, 231, 231, 1);
+    }
+
+    .yingkui-jiedu>li {
+      list-style: disc;
+      margin-left: 2rem;
+      text-align: left;
+      line-height: 1.8rem;
+      font-size: .93rem;
+      color: #6F7176;
+    }
+
+    .yingkui-jiedu>li>span {
+      color: #D91D37;
+    }
+
+    .btn-i1,
+    .btn-i2 {
+      border-radius: 50%;
+      font-style: normal;
+      padding: 0px 5px;
+      border: 1px solid #cccccc;
+      box-sizing: border-box;
+    }
+
+    /*遮罩层*/
+
+    .zhezhao {
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      opacity: 0.3;
+      z-index: 12;
+      top: 0;
+      left: 0;
+      position: fixed;
+      display: none;
+    }
+
+    /*弹出层*/
+
+    .tishi {
+      width: 18rem;
+      position: fixed;
+      background-color: #f5f5f5;
+      z-index: 13;
+      font-size: 1.2rem;
+      left: 50%;
+      margin-left: -9rem;
+      display: none;
+      top: 50%;
+      margin-top: -52px;
+      text-align: center;
+      color: #2B2B2B;
+    }
+
+    .tishi>p {
+      padding: .9rem;
+      box-sizing: border-box;
+      font-size: .9rem;
+      line-height: 1.4rem;
+    }
+
+    .tishi>a {
+      display: block;
+      color: #232323;
+      font-size: .98rem;
+      line-height: 2.4rem;
+      border-top: 1px solid #cccccc;
+    }
+
+    .imgRotate {
+      transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      /* Internet Explorer */
+      -moz-transform: rotate(180deg);
+      /* Firefox */
+      -webkit-transform: rotate(180deg);
+      /* Safari 和 Chrome */
+      -o-transform: rotate(180deg);
+      /* Opera */
+    }
+
+    .mask p {
+      transform: translate(-50%, -50%);
+      font-family: "楷体";
+      font-size: 1.4rem;
+    }
+
+    .nodata {
+      text-align: center;
+      line-height: 3rem;
+    }
+
+    .zhanji-list .c_win {
+      color: red;
+    }
+
+    .zhanji-list .c_draw {
+      color: blue;
+    }
+
+    .zhanji-list .c_lose {
+      color: green;
+    }
+
+    .header-left img,
+    .header-right img {
+      width: 4rem;
+      height: 4rem;
+    }

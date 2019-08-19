@@ -1,0 +1,405 @@
+/*@media screen and (min-width: 240px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 9px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 320px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 12px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 374px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 14px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 400px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 15px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 413px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 15.5px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 426px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 16px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 450px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 18px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 480px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 18px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 540px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 20.25px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 590px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 22.13px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 600px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 22.5px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 640px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 24px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 720px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 27px;*/
+  /*}*/
+/*}*/
+/*@media screen and (min-width: 800px) {*/
+  /*html,*/
+  /*body,*/
+  /*button,*/
+  /*input,*/
+  /*select,*/
+  /*textarea {*/
+    /*font-size: 30px;*/
+  /*}*/
+/*}*/
+/*火狐滚动条设置*/
+@-moz-document url-prefix(http: //),
+url-prefix(https://) {
+  /* 隐藏上下箭头 */
+  scrollbarbutton {
+    display: none !important;
+  }
+  /* 纵向滚动条宽度 */
+  scrollbar[orient="vertical"] {
+    max-height: 0;
+  }
+}
+html {
+  background: #f8f7f2;
+}
+body {
+  font-family: "微软雅黑";
+  color: #666666;
+  margin: 0;
+  padding: 0;
+}
+span {
+  display: inline-block;
+}
+b,
+em,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+ul,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+  font-size: 100%;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+h2 {
+  display: block;
+}
+.row {
+  display: block;
+  white-space: nowrap;
+}
+.hide {
+  display: none;
+}
+/*#header {*/
+  /*height: 3.66rem;*/
+  /*background: #ba142b;*/
+  /*color: #fff;*/
+  /*position: relative;*/
+  /*z-index: 10;*/
+  /*text-align: center;*/
+  /*border: 0;*/
+/*}*/
+/*#header h1 {*/
+  /*line-height: 3.66rem;*/
+/*}*/
+/*#header a.goback {*/
+  /*padding-left: 3rem;*/
+  /*position: absolute;*/
+  /*top: 27%;*/
+  /*left: 0;*/
+  /*line-height: 1.5rem;*/
+  /*color: #FFFFFF;*/
+  /*font-size: 1.1rem;*/
+  /*background: url(../images/left.png) 0.875rem center no-repeat;*/
+/*}*/
+
+
+/*#header,*/
+/*#yixin #header {*/
+  /*height: 3.66rem;*/
+  /*color: #fff;*/
+  /*position: relative;*/
+  /*z-index: 12;*/
+  /*text-align: center;*/
+  /*border: 0;*/
+/*}*/
+/*#header h1 {*/
+  /*position: relative;*/
+  /*!*z-index: 11;*!*/
+  /*font-weight: 700;*/
+  /*font-size: 1.75rem;*/
+  /*line-height: 3.66rem;*/
+  /*height: 3.66rem;*/
+/*}*/
+/*#header .rightBox:link,*/
+/*#header .rightBox:visited,*/
+/*#header .rightBox:hover,*/
+/*#yixin #header .rightBox:link,*/
+/*#yixin #header .rightBox:visited,*/
+/*#yixin #header .rightBox:hover,*/
+/*#yixin #header .goBack:link,*/
+/*#yixin #header .goBack:visited,*/
+/*#yixin #header .goBack:hover,*/
+/*#header .goBack:link,*/
+/*#header .goBack:visited,*/
+/*#header .goBack:hover {*/
+  /*color: #fff;*/
+/*}*/
+/*#header .goBack,*/
+/*#yixin #header .goBack {*/
+  /*left: 0;*/
+  /*padding-left: 2.5rem;*/
+  /*background-size: .875rem;*/
+  /*background: url(../images/left.png) 0.875rem center no-repeat;*/
+/*}*/
+/*#header .rightBox,*/
+/*#header .goBack,*/
+/*#yixin #header .goBack {*/
+  /*position: absolute;*/
+  /*top: 27%;*/
+  /*z-index: 500;*/
+  /*height: 50%;*/
+  /*font-size: 1.16rem;*/
+  /*line-height: 1.5em;*/
+/*}*/
+.helpList {
+  font-size: 1rem;
+  /*padding: 3.66rem 0;*/
+  color: #333;
+}
+.helpList li {
+  padding-bottom: 1rem;
+}
+.helpList h1 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.helpList p,
+.helpList dd {
+  text-indent: 1.2rem;
+}
+.helpList dl {
+  padding-bottom: 0.6rem;
+}
+.helpList dt {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.mainCon {
+  margin: .8rem 1.2rem 0;
+  padding-bottom: 0.8rem;
+}
+.helpTable {
+  width: 100%;
+  line-height: 2.66rem;
+  font-size: 1.2rem;
+}
+.helpTable th {
+  text-align: center;
+  background: #e7e1d9;
+  color: #666;
+  border: 1px solid #ccc;
+}
+.helpTable td {
+  text-align: center;
+  color: #999;
+  border: 1px solid #ccc;
+}
+.d11Help {
+  color: #999;
+}
+.d11Help .helpList {
+  font-size: 1rem;
+  padding: 0 0 0.2rem 0;
+}
+.d11Help .helpList li {
+  line-height: 1.66rem;
+  padding-bottom: 0;
+}
+.d11Help .helpList strong {
+  color: #666;
+  font-size: 1.2rem;
+}
+.d11Help .helpTable td {
+  background: #fff;
+}
+.d11Help .helpTable td em {
+  color: #ba2636;
+}
+.kuai3Help {
+  color: #cae6d2;
+}
+.kuai3Help .helpList {
+  font-size: 1rem;
+  padding: 0 0 0.2rem 0;
+}
+.kuai3Help .helpList li {
+  line-height: 1.66rem;
+  padding-bottom: 0.5rem;
+}
+.kuai3Help .helpList strong {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.kuai3Help .helpTable th {
+  background: #207e4e;
+  border-color: #5ea27f;
+  color: #fff;
+}
+.kuai3Help .helpTable td {
+  background: #207e4e;
+  border-color: #5ea27f;
+  line-height: 1.5rem;
+  color: #cae6d2;
+  padding: 0.6rem 0;
+}
+.kuai3Help .helpTable td em {
+  color: #ffde00;
+}
+.kuai3Help .awardText {
+  color: #ffde00;
+}
+.sscHelp {
+  color: #999;
+}
+.sscHelp .helpList {
+  font-size: 1rem;
+  padding: 0 0 0.2rem 0;
+}
+.sscHelp .helpList li {
+  line-height: 1.66rem;
+  padding-bottom: 0;
+}
+.sscHelp .helpList strong {
+  color: #666;
+  font-size: 1.2rem;
+}
+.sscHelp .helpTable td {
+  background: #fff;
+  line-height: 1.8rem;
+  padding: 0.6rem 0;
+}
+.sscHelp .helpTable td em {
+  color: #ba2636;
+}
+.awardText {
+  float: right;
+  color: #db122e;
+}

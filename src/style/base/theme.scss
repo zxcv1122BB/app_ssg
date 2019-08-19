@@ -1,0 +1,233 @@
+@import './mixi.scss';
+@for $i from 1 to 4 {
+  .el-loading-spinner .el-loading-text,
+  .el-loading-spinner i {
+    color: nth($colors, $i)
+  }
+  .custome-#{nth($colorsValue,$i)} {
+    //#ba142b
+    //base
+    //#header, //index
+    // #headers,
+    .subBtn>a,
+    .loginBtn,
+    .allPlayArea .topTitle,
+    #hahah li .tip,
+    .betting-multiple .betting-btn,
+    .cqssc .betting-btn, //centerGlobal
+    .btnSure,
+    .section li .copy,
+    .subtn,
+    .payBtn input[type=button],
+    #monPwd #article p input[type=button],
+    .copy,
+    .codeBtn,
+    .phone .btn, //ng/
+    .success .top_head,
+    .play_menu .top_head,
+    .pay .top_head,
+    .play_head ul li.active .sel,
+    .success .mbt,
+    .popup .body,
+    .popup a, //fbsg
+    .iDialogBody .confirmBox em.confirm, //cailMore
+    #caiMore article #backg,
+    #caiMore #btn, //enchashment
+    #enchash .yd-btn-primary, //userPerfectInfo
+    .subBtn>a,
+    .gamePlan .presentPlan b,
+    #fixedGameList .rightTitle,
+    #fixedGameList .rightGameList div span.active
+      {
+      background-color: nth($colors, $i);
+    } //index
+    .identity #mainBody,
+    .errBox,
+    .operation.usertype i,
+    #hahah li b.fl,
+    .fixed_sign.usertype i,
+    #logoutBtn, //centerGlobal
+    .guessYes,
+    .isDan,
+    #prompt,
+    #tishi,
+    #depFile #article .userInfo em,
+    #enchash #article .hint span,
+    #enchash #article p em, //ng/
+    .play_list ul li .sel.active, //basketDetail
+    .tool ul .active, //deatil
+    .odd_active, //qb
+    div.gametype-wrap ul.gametype li.active, //userPerfect
+    #identity #mainBody,
+    .errBox,
+    .betting-multiple dd:last-child .bonus,
+    #fixedGameList .gameType0>div,
+    #fixedGameList .gameType1>div,
+    #fixedGameList .gameType2>div {
+      color: nth($colors, $i)
+    } //centerGlobal
+    .isDan,
+    .choose_yes,
+    .codeBtn, //ng/
+    .play_list ul li .sel.active {
+      border: 1px solid nth($colors, $i)
+    }
+    .iDialogBody .confirmBox em.confirm,
+    div.gametype-wrap ul.gametype li.active {
+      border-color: nth($colors, $i)
+    } //d53a3e
+    .hot-list-jz .bet-cols dd.active {
+      border: 1px solid nth($colorsValue_one, $i)
+    }
+    .hot-list-jz .bet-cols dd.active,
+    .bet-cols dd.active .odds,
+    .betting-multiple dd.active {
+      color: nth($colorsValue_one, $i)
+    }
+    .tab {
+      background-color: nth($colorsValue_one, $i);
+    } //fbe8e8
+    .main .info .random,
+    .hot-list-jz .bet-cols dd.active,
+    .betting-multiple dd.active {
+      background-color: nth($colorsValue_two, $i);
+    } //red
+    .cqssc_msg .rightArea .r_bage,
+    .r_bage,
+    .info-wrapper .record ul li .number .ball,
+    #mainArea .main .second span.sel_num,
+    .cancel,
+    .confirm,
+    .bets_footer .btn_bets,
+    #mainArea .main .common .bet-area ul li .sel_num {
+      background-color: nth($colorsValue_three, $i);
+    }
+    .countdown .time,
+    .countdown .red,
+    .recent .red,
+    #main .allPlayArea .changeBgOrCol,
+    .odd .red,
+    #header .changeBgOrCol,
+    .shuzicai_ul>li.tab_li_active,
+    .bets_footer .btn_bets,
+    .bets_footer .clear,
+    .pay .last_time span,
+    .pay .bets_list .bets_item .bets_type em.red {
+      color: nth($colorsValue_three, $i);
+    }
+    .bets_footer .btn_bets,
+    .bets_footer .clear
+      {
+      border: 1px solid nth($colorsValue_three, $i);
+    }
+    .shuzicai_ul>li.tab_li_active {
+      border-color: nth($colorsValue_three, $i);
+    }
+    #sel_font .select_size:after,
+    #skin .select_skin::after {
+      border-color: transparent nth($colorsValue_three, $i) nth($colorsValue_three, $i) transparent;
+    } //#cce136
+    .betbtn.active,
+    .row .betbtn.active,
+    .col.betbtn.active,
+    .footer>a {
+      background: nth($colorsValue_four, $i);
+    } //#E34020
+    #num,
+    .info .btn {
+      background: nth($colorsValue_five, $i);
+    }
+    #sel_font .select_size,
+    #skin .select_skin,
+    .main .info .random {
+      border: 1px solid nth($colorsValue_five, $i);
+    }
+    .rect .ball-list li p:first-child em,
+    .main .info .random {
+      color: nth($colorsValue_five, $i);
+    } //ec0909
+    .digitalColor_li-right>p:last-child>span.ball {
+      background-color: nth($colorsValue_six, $i);
+    }
+    .gameplaySelect .btn.openArea {
+      background: nth($colorsValue_seven, $i);
+    }
+
+    #header,.userhead{
+      background:nth($header_color, $i) ;
+    }
+
+    .bg-theme-color{
+      background:nth($color4, $i) ;
+    }
+
+    #container{
+      background:nth($bg_png, $i) ;
+      background-size: cover;
+    }
+
+    // .msg {
+    //   background:nth($ht_color, $i) ;
+    // }
+
+    .bottom_nav>div>a {
+      background:nth($rt_color, $i) ;
+    }
+
+    .varietyList ul li,
+    .bottom_nav ,
+    .digitalColor_ul>li,
+    .card.bg-public-deep-bgColor,
+    #ssc,
+    #changePwd #article nav,
+    #changePwd #article section .dShow,
+    #changePwd #article section .dShow input
+    {
+      background:nth($bt_color, $i) ;
+    }
+
+    .public_btn .item .active {
+      color:nth($hl_color, $i)
+    }
+
+    .bg-ucBody-bgColor {
+      background:nth($ht_bg, $i)
+
+    }
+
+    .shuzicai_nav{
+      background:nth($bl_bg, $i)
+
+    }
+
+    .games .tabs{
+      border-bottom: 1px solid nth($ht_color, $i);
+    }
+
+    .tit,.wap-text,.varietyList li a .content .title {
+      color:  nth($of_color, $i);
+    }
+
+    .show,#mainTit,.digitalColor_li-right p:first-child span{
+      color:  nth($gf_color, $i);
+
+    }
+
+    .varietyList li a .content .timeName{
+      color:  nth($gf_color, $i);
+
+    }
+
+    .varietyList li a .content .time{
+      color:  nth($color3, $i);
+
+    }
+
+
+
+
+
+
+
+  }
+}

@@ -1,0 +1,155 @@
+article {
+	background-color: white !important;
+	height: 610px;
+	padding-top: 1rem;
+	overflow: auto;
+	position: relative;
+}
+
+article ul {
+	/*display: inline-block;*/
+	margin: .5rem;
+	border-bottom: 1px #D3D3D3 solid;
+	position: relative;
+}
+
+#chatUser div {
+	/*	border-bottom: 1px #D3D3D3 solid;*/
+}
+
+article ul li {
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2rem;
+}
+
+#chatUser ul li:first-of-type img {
+	border: 1px solid #E3E3E3;
+	border-radius: 50%;
+	width: 2.5rem;
+}
+
+#chatUser ul li:last-of-type {
+	font-size: .9rem;
+	/*overflow: hidden;/*内容超出后隐藏*/
+	/*text-overflow: ellipsis;/* 超出内容显示为省略号*/
+	/*white-space: nowrap;/*文本不进行换行*/
+}
+
+#chatUser ul span {
+	position: absolute;
+	right: 2rem;
+	top: .8rem;
+}
+
+#chatUser p {
+	padding-left: 2.7rem;
+	color: gray;
+	height: 2rem;
+	position: relative;
+}
+
+#chatUser p img {
+	position: absolute;
+	left: 1rem;
+	width: 1.5rem;
+	bottom: .8rem;
+}
+
+#chatUser #search {
+	height: 3rem;
+	position: relative;
+	padding: .5rem 2rem;
+	margin-bottom: 1rem;
+}
+
+#chatUser #search img {
+	position: absolute;
+	top: 1rem;
+	left: 3rem;
+}
+
+#chatUser #search input[type=search] {
+	width: 85%;
+	text-align: left;
+	padding-left: 3rem;
+}
+
+#chatUser #search a {
+	line-height: 2rem;
+	color: blue;
+	display: none;
+}
+
+#chatUser .fixedSearch {
+	position: fixed;
+	top: -1rem;
+	z-index: 9999;
+	background: white !important;
+}
+.background_gray {
+	position: absolute;
+	display: none;
+	top: 0rem;
+	padding-top: 3rem;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: white;
+	z-index: 99;
+}
+
+.btn {
+	border: 0;
+	color: white;
+	border-radius: .5rem;
+	font-size: .8rem;
+	padding: .1rem .3rem;
+}
+
+.btn_red {
+	background: #ba142b;
+}
+
+.btn_blue {
+	background: #f0ad4e;
+}
+
+#user {
+	top: 0.2rem;
+}
+
+#allUser {
+	position: absolute;
+	right: 2.5rem;
+}
+
+#user .mui-switch:before {
+	content: '禁言用户';
+}
+
+#user .mui-switch.mui-active:before {
+	content: '解除禁言';
+}
+
+#allUser .mui-switch:before {
+	content: '全体禁言';
+}
+
+#allUser .mui-switch.mui-active:before {
+	content: '解除禁言';
+}
+
+.mui-switch {
+	width: 6.5rem;
+}
+
+.mui-switch.mui-active .mui-switch-handle {
+	transform: translate(4.6rem, 0)
+}
+
+.chooseUser {
+	height: 10rem;
+	overflow: auto;
+}

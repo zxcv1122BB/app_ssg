@@ -1,0 +1,19 @@
+.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn){
+	padding-left: 4rem;
+}
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{
+	left: 1rem;
+}
+#custom{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAn0lEQVRIS+3UwQ2EIBCF4TcX+rADOlAr2GwpXJgaoAo7sBVL2Q4wJIsHDzIz0Zuc4ZP8EyE8tOghFy98lL1MkXP2pZSViL4xxk0zj27jlNJCRB8AswbvwvWWFlwEW3AxrMVVcMMBjMw8XA3TCntm9rfBdYgAvHNuCiH8boE1aP2gKIUWFcEWtAv/f+lF0vTcW5RC80a0vS8se48tbduZHQ8iQBcmOS5YAAAAAElFTkSuQmCC) no-repeat center right;
+}
+.sureBtn{
+	width: 80%;
+	border: 0;
+	text-align: center;
+	background: #ba142b;
+	color: white;
+	margin: 2rem;
+	padding: .5rem 1rem;
+	border-radius: 2rem;
+}

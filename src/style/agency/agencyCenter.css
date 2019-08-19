@@ -1,0 +1,59 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.itemList {
+  padding-top: .5rem;
+}
+
+.itemList li {
+  width: 100%;
+  height: 4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  padding: .3rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* .itemList li b.fl {
+  margin-top: 1rem;
+  color: #e34020;
+  font-size: 1.8rem;
+  margin-right: .5rem;
+  opacity: .85;
+} */
+
+.itemList li span {
+  line-height: 3.5rem;
+}
+
+.itemList li div.fr {
+  position: relative;
+}
+
+.itemList li div.fr img {
+  padding-top: .3rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.itemRebateList ul li {
+  line-height: 2.5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.itemRebateList ul li>span {
+  display: inline-block;
+}
+
+.itemRebateList ul li>span:nth-child(1) {
+  width: 40%;
+}
+
+.itemRebateList ul li>span:nth-child(2) {
+  width: 40%;
+}
