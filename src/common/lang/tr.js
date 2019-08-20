@@ -1,4 +1,5 @@
 export default {
+  'word': '繁体',
   '合营简介': '合營簡介',
   '马奇朵': '瑪奇朵',
   'personCenter': '個人中心',

@@ -131,11 +131,11 @@
                     </li>
                     <li>
                       <div>
-                        <span class="exp lang" @click.stop="isShowLang = !isShowLang">{{$t('语言')}}</span>
-                        <div class="check-word" v-if="isShowLang">
+                        <span class="exp lang" @click.stop="checkWord($i18n.locale === 'cn' ? 'tr' : 'cn')" :data-key="$i18n.locale">{{$t('word')}}</span>
+                        <!-- <div class="check-word" v-if="isShowLang">
                           <span @click.stop="checkWord('cn')">简体</span>
                           <span @click.stop="checkWord('tr')">繁体</span>
-                        </div>
+                        </div> -->
                       </div>
                     </li>
 
