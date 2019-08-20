@@ -126,7 +126,7 @@
 							<div class="num banner_num" @click="showHis(1)">
 								<!-- <span  v-if="previousIssue_tips" class="red" style="font-size:1.2rem;">{{$t('开奖中')}}...</span> -->
 								<div v-if="previousIssue_tips">
-									<span style="font-size:1.2rem;color:red;height: 25px;display: inline-block;position:relative;top:-.2rem;">{{$t('开奖数据获取中')}}</span> <img style="animation:rotating 1.2s linear infinite;width:25px;" src="../../../assets/images/base/n_refresh.png" alt="">
+									<span style="font-size:1.2rem;color:red;height: 25px;display: inline-block;position:relative;top:-.2rem;">{{$t('正在开奖...')}}</span> <img style="animation:rotating 1.2s linear infinite;width:25px;" src="../../../assets/images/base/n_refresh.png" alt="">
 								</div>
 								<span class="red" v-else-if="!recentlyNum||recentlyNum.length==0">{{$t('数据获取中')}}...</span>
 								<template v-else>
@@ -417,7 +417,7 @@
                         <div class="btnList">
                             <div class="btn btn_sure" @click="btn_betSure">{{$t('确定')}}</div><div class="btn btn_cancel" @click="btn_betCancel">{{$t('取消')}}</div>
                         </div>
-                        
+
                     </div>
                 </div> -->
 
@@ -504,7 +504,7 @@
 		/* margin: 0 auto; */
 		float: right;
 	}
-	
+
 	// .betConfirm{
 	//         position: absolute;
 	//     top: 0;
@@ -570,7 +570,7 @@
 	//                     // border-top: 1px solid #ddd;
 	//                 &.btn_sure{
 	//                     color: #fff;
-	//                     background-color: #312b73; 
+	//                     background-color: #312b73;
 	//                 }
 	//                 &.btn_cancel{
 	//                     //  background: #cbd4de;
@@ -584,15 +584,15 @@
 	input.mui-input.mui-input-clear::-webkit-input-placeholder {
 		color: #aab2bd;
 	}
-	
+
 	.hisWrap {
 		top: 110px;
 	}
-	
+
 	.record {
 		top: 50px;
 	}
-	
+
 	#offCanvasContentScroll .num span.ball {
 		//    vertical-align: bottom;
 		vertical-align: middle;
@@ -600,16 +600,16 @@
 		padding-top: 2.5px;
 		line-height: 1;
 	}
-	
+
 	.record ul li {
 		height: 35px;
 	}
-	
+
 	.gameplaySelect .btn {
 		line-height: 32px;
 		height: 32px;
 	}
-	
+
 	.time1 {
 		font-family: arial;
 		position: relative;
@@ -623,7 +623,7 @@
 			right: -3.5px;
 		}
 	}
-	
+
 	.topPopover_wrap {
 		position: absolute;
 		top: 0;
@@ -658,7 +658,7 @@
 			}
 		}
 	}
-	
+
 	.afterBet {
 		position: absolute;
 		top: 0;
@@ -748,7 +748,7 @@
 			}
 		}
 	}
-	
+
 	.betConfirm {
 		position: absolute;
 		top: 0;

@@ -136,7 +136,7 @@
                             <div class="num" @click="showHis(1)">
                                 <!-- <span class="red" style="font-size: 1.2rem;color:red" v-if="previousIssue_tips">{{$t('开奖中')}}...</span> -->
                                 <div v-if="previousIssue_tips" >
-                                    <span style="font-size:1.2rem;color:red;height: 25px;display: inline-block;position:relative;top:-.2rem;">{{$t('开奖数据获取中')}}</span>  <img  style="animation:rotating 1.2s linear infinite;width:25px;" src="../../../assets/images/base/n_refresh.png" alt="">
+                                    <span style="font-size:1.2rem;color:red;height: 25px;display: inline-block;position:relative;top:-.2rem;">{{$t('正在开奖...')}}</span>  <img  style="animation:rotating 1.2s linear infinite;width:25px;" src="../../../assets/images/base/n_refresh.png" alt="">
                                 </div>
                                 <span v-else-if="!recentlyNum||recentlyNum.length==0" style="height:1.5rem;" class="red">{{$t('数据获取中')}}...</span>
                                 <template v-else>

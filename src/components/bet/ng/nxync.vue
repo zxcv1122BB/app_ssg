@@ -20,7 +20,7 @@
 						<a href="javascript:;" @click="switchoverType=false" class="closeBtn"></a>
 					</template>
                 </header>
-                
+
                 <div id="gameplayArea"  v-show="switchoverType">
                     <div class="play_head" v-cloak>
                         <ul>
@@ -52,7 +52,7 @@
                                 <li @click="togoLottery()"><a href="javascript:;"><img src="../../../assets/images/prize.png" alt="" srcset="">{{$t('近期开奖')}}</a></li>
                                 <li @click="togoRecord()"><a href="javascript:;"><img src="../../../assets/images/record.png" alt="" srcset="">{{$t('购彩记录')}}</a></li>
                                 <li @click="handleShowRule()"><a href="javascript:;"><img src="../../../assets/images/gameTips.png" alt="" srcset="">{{$t('玩法提示')}}</a></li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                             <div class="num" @click="showHis(1)">
                                 <!-- <span class="red" style="font-size: 1.2rem;color:red" v-if="previousIssue_tips">{{$t('开奖中')}}...</span> -->
                                 <div v-if="previousIssue_tips" >
-                                    <span style="font-size:1.2rem;color:red;height: 25px;display: inline-block;position:relative;top:-.2rem;">{{$t('开奖数据获取中')}}</span>  <img  style="animation:rotating 1.2s linear infinite;width:25px;" src="../../../assets/images/base/n_refresh.png" alt="">
+                                    <span style="font-size:1.2rem;color:red;height: 25px;display: inline-block;position:relative;top:-.2rem;">{{$t('正在开奖...')}}</span>  <img  style="animation:rotating 1.2s linear infinite;width:25px;" src="../../../assets/images/base/n_refresh.png" alt="">
                                 </div>
                                 <span class="red" v-else-if="recentlyNum.length==0" style="font-size: 1.5rem;">{{$t('数据获取中')}}...</span>
                                 <template v-else>
@@ -162,7 +162,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="mui-row" style="padding: 10px 0 7px;">
@@ -180,7 +180,7 @@
                                     <!-- <span class="msg" style="font-size: 16px;font-weight: 300;color:#ddd;">开奖</span> -->
                                     <span class="time1" v-if="deadlineStr.indexOf(':')!=-1">
                                         <span :style="index==0?'letter-spacing: 7px;margin-left: 4px;':'letter-spacing: 7px;margin-left: 7px;'" :key="index" v-for="(it,index) in deadlineStr.split(':')">{{it}}</span>
-                                       
+
                                     </span>
                                     <span class="time" v-else><span>{{deadlineStr}}</span></span>
                                 </div>
@@ -188,7 +188,7 @@
                                     <span class="bl">{{bets}}</span>注
                                 </div> -->
 
-                                
+
                             </div>
                         </div>
                         <div class="body" id="mainArea">
@@ -246,7 +246,7 @@
                                     <span class="bl" style="position: absolute;top: 50%;margin-top: -0.5rem;width: 100%;left: 0;text-align: center;">{{bets}}注</span>
                                 </div>
                                 <div class="mui-col-xs-3 mui-col-sm-3">
-                                    
+
                                     <button class="mui-btn bot_betBtn"  @click="sh_betConfirm(1,'')"><span>{{$t('下注')}}</span></button>
                                     <!-- <button class="mui-btn bot_betBtn"  @click="handleConfirm"><span>{{$t('下注')}}</span></button> -->
                                 </div>
@@ -396,7 +396,7 @@
                         <div class="btnList">
                             <div class="btn btn_sure" @click="btn_betSure">{{$t('确定')}}</div><div class="btn btn_cancel" @click="btn_betCancel">{{$t('取消')}}</div>
                         </div>
-                        
+
                     </div>
         </div> -->
 
@@ -404,7 +404,7 @@
             <div class="wrap"></div>
             <div class="content">
                 <div class="title">{{$t('注单设定')}}</div>
-                
+
                 <div class="btnInfo">
                     <div class="coin clearfix">
                         <div class="clearfix">{{$t('单注金额')}}  <input pattern="[0-9]*" type="number" class="mui-input mui-input-clear"  v-model="singleCoins" @keyup="handleCoins"> 元
@@ -419,7 +419,7 @@
                             <span @click="setSingleCoins(5000,$event)">5000</span>
                             <span @click="setSingleCoins(10000,$event)" style="margin:5px 5%;">10000</span>
                             <span @click="setSingleCoins(50000,$event)">50000</span>
-                        </div>   
+                        </div>
                     </div>
                      <div class="bet_detail">
                             <ul>
@@ -437,7 +437,7 @@
                 <div class="btnList">
                     <div class="btn btn_sure" @click="btn_betSure">{{$t('确定')}}</div><div class="btn btn_cancel" @click="btn_betCancel">{{$t('取消')}}</div>
                 </div>
-                
+
             </div>
         </div>
 
@@ -445,7 +445,7 @@
             <div class="wrap"></div>
             <div class="content">
                 <div class="title">{{$t('投注详情')}}</div>
-                
+
                 <div class="btnInfo">
                     <div style="text-align:left;">
                         <p>{{$t('投注彩种')}}：{{typeNameTitle}}</p>
@@ -514,7 +514,7 @@
 //         margin-top: -7rem;
 //         padding: 0;
 //         // text-indent: 1rem;
-        
+
 //         .title{
 //             line-height: 2rem;
 //             background: #312b73;
@@ -552,9 +552,9 @@
 //                 line-height: 2rem;
 //                     // border-top: 1px solid #ddd;
 //                 &.btn_sure{
-                    
+
 //                     color: #fff;
-//                     background-color: #312b73; 
+//                     background-color: #312b73;
 //                 }
 //                 &.btn_cancel{
 //                     //  background: #cbd4de;
@@ -616,7 +616,7 @@
             height: calc(100% - 44px);
             z-index: 2001;
             background: rgba(0,0,0,.6);
-        
+
         }
         #topPopover{
                 z-index: 2002;
@@ -659,11 +659,11 @@
         // margin-top: -7rem;
         top: 15%;
         max-height: 70%;
-        
+
         padding: 0;
         border-radius: 10px;
         // text-indent: 1rem;
-        
+
         .title{
             line-height: 3rem;
             // background: #312b73;
@@ -681,7 +681,7 @@
             overflow: scroll;
             max-height: 300px;
             // background-color: #3ea7a5;
-            
+
             >div{
                 padding: .2rem 1rem .2rem 1rem;
                 // background-color: #3ea7a5;
@@ -707,11 +707,11 @@
                 line-height: 2.5rem;
                     // border-top: 1px solid #ddd;
                 &.btn_sure{
-                    
+
                     // color: #fff;
                     // background-color: #312b73;
                     border-right: 1px solid #dbdbdb;
-                    box-sizing: border-box; 
+                    box-sizing: border-box;
                         // background: #3ea7a5;
                     // color: #fff;
                     border-bottom-left-radius: 8px;
@@ -753,11 +753,11 @@
         // margin-top: -7rem;
         top: 15%;
         max-height: 70%;
-        
+
         padding: 0;
         border-radius: 10px;
         // text-indent: 1rem;
-        
+
         .title{
             line-height: 3rem;
             // background: #312b73;
@@ -828,11 +828,11 @@
                 line-height: 2.5rem;
                     // border-top: 1px solid #ddd;
                 &.btn_sure{
-                    
+
                     // color: #fff;
                     // background-color: #312b73;
                     border-right: 1px solid #dbdbdb;
-                    box-sizing: border-box; 
+                    box-sizing: border-box;
                         background: #3ea7a5;
                     color: #fff;
                     border-bottom-left-radius: 8px;
