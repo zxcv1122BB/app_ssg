@@ -143,16 +143,13 @@
                   </ul>
                 </div>
                   <!--支持循环，需要重复图片节点-->
-            <div class="slider" style="z-index: 1;" >
+            <!-- <div class="slider" style="z-index: 1;" >
 							<ul class="slider-main">
 								<li :key="index" v-for='(item,index) in imgs' @click="click_href(item.destinationUrl,item.title)">
 									<img :src="item.picture_url" alt="">
 								</li>
-								<!-- <li>
-									<img src="../assets/images/2.png" alt="">
-								</li> -->
 							</ul>
-						</div>
+						</div> -->
         <div id="main" :class="baseIndex==2?'deep':''">
           <div id="pullrefresh">
 

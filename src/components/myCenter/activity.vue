@@ -9,17 +9,13 @@
                 </header>
                 <!--列表内容-->
                 <div class="inner">
-                    <ul class="inner-ul" v-if="!nodata">
+                    <!-- <ul class="inner-ul" v-if="!nodata">
                         <li class="list" v-for="(item,index) in imgs" :id="item.id">
                             <a href="javascript:;" @click="detailOpen(index)">
                             <div class="list-pic">
-                                <!--<p @click="show_pic(item.id)">-->
                                 <p>
                                     <img :src="item.titleUrl" height="60"/>
                                 </p>
-                                <!--<p class="hide">-->
-                                <!--<img :src="item.contentUrl"/>-->
-                                <!--</p>-->
 
                                     <div class="detail">
                                         {{$t("seeDetails")}}
@@ -34,7 +30,7 @@
                     </ul>
                     <div class="noMessage" v-else>
                         <img width="100%" src="../../assets/images/background.png" alt="" srcset="">
-                    </div>
+                    </div> -->
                     <!--加载更多-->
                     <div class="has-more"
                          style="text-align: center;line-height: 40px; #666;height: .6rem"></div>
