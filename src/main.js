@@ -17,6 +17,7 @@ Vue.use(YDUI);
 Vue.use(VueClipboard)
 import config from './config/config.js'
 Vue.use(config)
+console.log(Vue.szcIdList, '---------------------');
 import App from './App'
 import router from './router/index'
 // import $ from 'jquery'

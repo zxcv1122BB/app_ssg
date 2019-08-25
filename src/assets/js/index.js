@@ -677,6 +677,13 @@ export default {
 
 
     },
+    hideCanvasSideScroll () {
+      $("#canvasWrapper>div:nth-child(2)").css({
+        "transform": "translate3d(0, 0px, 0px)"
+      });
+      $("#canvasWrapper").removeClass("mui-active");
+      $("#canvasSide").removeClass(" mui-active");
+    },
     popArea(type){
       if(type==1){
         $("#canvasWrapper>div:nth-child(2)").css({
@@ -694,12 +701,8 @@ export default {
 
         $("#canvasSide").addClass("mui-active");
       }else{
+        this.hideCanvasSideScroll();
         // $("#aWrap").hide();
-        $("#canvasWrapper>div:nth-child(2)").css({
-          "transform": "translate3d(0, 0px, 0px)"
-        });
-        $("#canvasWrapper").removeClass("mui-active");
-        $("#canvasSide").removeClass(" mui-active");
       }
 
 
@@ -1250,7 +1253,7 @@ export default {
                     item.luckList="开奖中...";
                   }
 
-                  if(item.gameID >5&&item.gameID!=99) {
+                  if(item.gameID >=5&&item.gameID!=99) {
                     _this.hotArr.push(item);
                   }
                 });

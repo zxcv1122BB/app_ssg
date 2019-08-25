@@ -71,7 +71,7 @@
 			</aside>
 
     <!--底部按钮-->
-    <div class="content-wrap  mui-transitioning" :style="wStyle">
+    <div class="content-wrap  mui-transitioning" @click="hideCanvasSideScroll" :style="wStyle">
       <header id="header" v-show="baseIndex!=4" style="background-color:#242329;">
         <h1 class="header-title" v-cloak><img src="../assets/images/base/logo.png" alt=""></h1>
         <!-- <div class="logo"></div> -->
@@ -137,6 +137,9 @@
                           <span @click.stop="checkWord('tr')">繁体</span>
                         </div> -->
                       </div>
+                    </li>
+                    <li>
+                      <a href="https://www.iqiyi.com/" class="exp"><i class='video-icon'></i>{{$t('影音')}}</a>
                     </li>
 
 
@@ -654,7 +657,7 @@
 					<!-- <a href="#canvasSide" class="mui-action-menu">
 						<img src="static/images/gengduo.png" style="width: 90px;margin-bottom: -4px;">
 					</a> -->
-          <a @click="popArea(1)" class="mui-action-menu">
+          <a @click.stop="popArea(1)" class="mui-action-menu">
 						<img src="static/images/gengduo.png" style="width: 90px;margin-bottom: -4px;">
 					</a>
 				</div>

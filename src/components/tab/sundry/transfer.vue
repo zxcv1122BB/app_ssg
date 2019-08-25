@@ -362,7 +362,7 @@
         border-radius: 27px;
         color: #fff;
         padding: 10px;
-        background: #242e77;
+        background: #318e30;
     }
 
     .wap-foot {
