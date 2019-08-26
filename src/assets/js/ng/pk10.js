@@ -334,6 +334,7 @@ export default {
         }
         $(".refresh").addClass("isClick");
         this.getHistoryBannerInfo();
+        this.get_userState();
         $(".refresh").css({
           "transition": "transform 1s linear",
           "transform": "rotate(360deg)",

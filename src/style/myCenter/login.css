@@ -41,9 +41,9 @@
     height: 100px;
 }
 .loginDiv .head>img{
-  /* width: 60%; */
+   width: 80%;
   /* height: 40px; */
-  height: 80px;
+  /*height: 80px;*/
 }
 #login {
   width: 300px;
@@ -137,7 +137,7 @@
 .login_btnbg{
   background: url(../../assets/images/base/btn_bg_1.png) repeat-x;
   color: #fff;
-  
+
 }
 .reg_btnbg{
   background: url(../../assets/images/base/btn_bg_2.png) repeat-x;
@@ -349,7 +349,7 @@
   left: 5%;
   /* background: rgba(227,229,236,.4); */
   /* background: linear-gradient(bottom,rgba(240,242,247,.4),rgba(162,160,180,.4));  */
-  background: linear-gradient(bottom,hsla(220,2%,96%,.2),hsla(246,11%,71%,.4)); 
+  background: linear-gradient(bottom,hsla(220,2%,96%,.2),hsla(246,11%,71%,.4));
   padding: 5%;
   border-radius: 10px;
   padding-right: 15%;
@@ -379,7 +379,7 @@
       /* rgba(18,18,20,.8) */
       hsla(220,4%,20%,.95),
       hsla(240,10%,8%,.9)
-		); 
+		);
 
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -400,7 +400,7 @@
   border: 1px solid #826375;
   /* color: #262a38; */
   color: #fff;
-  
+
 }
 
 .rlicon{

@@ -257,17 +257,17 @@ export default {
           height:mh+50
         });
 
-        
-          
-          
-        
+
+
+
+
 
             //重设底下三个按钮
     // $("#offCanvasContentScroll>div>.mui-row.mui-text-right>.mui-col-xs-2 span").css({
     //   width:$("#offCanvasContentScroll>div>.mui-row.mui-text-right>.mui-col-xs-2 .mui-btn.bot_betBtn").width()-2
     // });
     // console.log($(".betConfirm>.content").height());
-    
+
     // var _this=this;
     // setInterval(function(){
     //   _this.scrArea1++;
@@ -312,8 +312,8 @@ export default {
           $('.hisWrap').addClass('hide');
           $('#offCanvasContentScroll .num .triangle').removeClass('reversal');
         }
-        
-        
+
+
       }else{
         $('.record').addClass('hide');
         $('.hisWrap').addClass('hide');
@@ -354,6 +354,7 @@ export default {
       }
       $(" .refresh").addClass("isClick");
       this.getHistoryBannerInfo();
+      this.get_userState();
       $(" .refresh").css({
         "transition": "transform 1s linear",
         "transform": "rotate(360deg)",
@@ -672,7 +673,7 @@ export default {
           } else {
             _this.history = [];
             _this.global_timingStorage.setOption(_this, ["getHistoryBannerInfo"], 10000, 1, _this.oneTypeId);
-                        
+
           }
         },
         error: function (res) {
@@ -1288,7 +1289,7 @@ export default {
       // mui('#topPopover_tips').popover('toggle');
       this.showMenu();
       this.closeMenu();
-      
+
     },
 
     //全大小单双清--按钮
@@ -1651,7 +1652,7 @@ export default {
         mui.confirm('钱包金额不足，请先充值', '是否跳到充值', btnArray, function(e) {
           if(e.index == 1) {
             _this.$router.push({ name: "depositFile" });
-            
+
           } else {
             return;
           }
@@ -1705,7 +1706,7 @@ export default {
       stopBanner = '';
       var str = JSON.parse(JSON.stringify(_this.BetsList));
 
-      
+
         str.map(function (item) {
           item.banner = _this.preventBanner;
           delete item.type;//删除属性
@@ -1739,12 +1740,12 @@ export default {
               var html=`<div style="text-align:left;"><p>投注彩种：${_this.typeNameTitle}</p><p>投注玩法：${_this.title}</p><p>投注金额：${_this.totalCoins+_this.coinUnit}</p><p>投注期数：第${_this.preventBanner}期</p></div>`;
 							// mui.confirm(html, data.msg, ['确定'], function(e) {
 							// 	if(e.index == 1) {
-									
+
 							// 	} else {
 							// 		return;
 							// 	}
               // })
-              
+
               $(".afterBet").show();
               $(".afterBet>.content").css({
                 top:"50%",
@@ -1785,7 +1786,7 @@ export default {
               var html=`<div style="text-align:left;">${data.msg}</div>`;
 							mui.confirm(html,'投注失败' , ['确定'], function(e) {
 								if(e.index == 1) {
-									
+
 								} else {
 									return;
 								}
@@ -1874,7 +1875,7 @@ export default {
               rebate: _this.rebate,
             });
           }
-        } 
+        }
         // else {
         //   mui.toast("已达投注长度上限，请先投注")
         // }
@@ -2134,7 +2135,7 @@ export default {
         $("#topPopover").removeClass("mui-active");
         $(".topPopover_wrap").hide();
       }
-     
+
     },
     //关闭menu（走势图...）
     closeMenu: function (type) {
@@ -2167,11 +2168,11 @@ export default {
       this.closeMenu(1);
 
       this.$nextTick(function(){
-        
+
         // if(localStorage.app_flag == undefined) {
         this.skip_newUrl(0, 'trend', 'bj28', 'trend');
       });
-      
+
       // } else {
       //     this.skip_newUrl(1, 'trend', 'bj28','trend');
       // }
@@ -2208,7 +2209,7 @@ export default {
         this.$router.push({name: 'login'});
         return;
       }
-      
+
       localStorage.chartId = 9;
       // if (localStorage.app_flag == undefined) {
         this.closeMenu(1);
@@ -2369,10 +2370,10 @@ export default {
     singleCoins:function(val){
       // alert(this.singleCoins)
       this.handleCoins();
-      
+
       if(val!=10&&val!=50&&val!=100&&val!=200&&val!=500&&val!=1000&&val!=5000&&val!=10000&&val!=50000){
         $(".betConfirm .coinList .active").removeClass('active');
-      } 
+      }
       this.setSpecialSum();
     },
     oneTypeId:function () {
@@ -2402,7 +2403,7 @@ export default {
         if(this.userName){
           this.get_userState();
         }
-        
+
         this.pullToRefresh.setNowThis(this);
         this.changeRoute(to, from);
         //console.log(this.$route);

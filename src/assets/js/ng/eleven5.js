@@ -615,8 +615,8 @@ export default {
         $("#mainArea").css({
             height:mh+50
           });
-  
-      
+
+
     },
     methods: {
         changDN(){
@@ -643,8 +643,8 @@ export default {
             $('.hisWrap').addClass('hide');
             $('#offCanvasContentScroll .num .triangle').removeClass('reversal');
           }
-          
-          
+
+
         }else{
           $('.record').addClass('hide');
           $('.hisWrap').addClass('hide');
@@ -672,6 +672,7 @@ export default {
         }
         $(" .refresh").addClass("isClick");
         this.getHistoryBannerInfo();
+        this.get_userState();
         $(" .refresh").css({
           "transition": "transform 1s linear",
           "transform": "rotate(360deg)",
@@ -1640,7 +1641,7 @@ export default {
                     rebate: _this.rebate,
                 });
 
-              } 
+              }
             //   else {
             //     mui.toast("已达投注长度上限，请先投注")
             //   }
@@ -2951,7 +2952,7 @@ export default {
                 mui.confirm('钱包金额不足，请先充值', '是否跳到充值', btnArray, function(e) {
                     if(e.index == 1) {
                         _this.$router.push({ name: "depositFile" });
-                        
+
                     } else {
                         return;
                     }
@@ -2962,7 +2963,7 @@ export default {
                 var str = JSON.parse(JSON.stringify(_this.BetsList));
                 // _this.sh_betConfirm(1,str);
                 this.betConfirm_tips=str;
-                
+
                 //              this.base.callAuthApi(obj);
             }
         },
@@ -3035,7 +3036,7 @@ export default {
                             // var html=`<div style="text-align:left;"><p>投注彩种：${_this.typeNameTitle}</p><p>投注玩法：${_this.title}</p><p>投注金额：${_this.totalCoins+_this.coinUnit}</p><p>投注期数：第${_this.preventBanner}期</p></div>`;
                             // mui.confirm(html, data.msg, ['确定'], function(e) {
                             //     if(e.index == 1) {
-                                    
+
                             //     } else {
                             //         return;
                             //     }
@@ -3062,7 +3063,7 @@ export default {
                                     obj.data = {
                                         tzJson: (test)
                                     };
-                                  _this.base.callAuthApi(obj);                                                   
+                                  _this.base.callAuthApi(obj);
                                 } else {
                                     _this.BetsList = [];
                                     return;
@@ -3075,7 +3076,7 @@ export default {
                             var html=`<div style="text-align:left;">${data.msg}</div>`;
                             mui.confirm(html,'投注失败' , ['确定'], function(e) {
                                 if(e.index == 1) {
-                                    
+
                                 } else {
                                     return;
                                 }
@@ -3140,7 +3141,7 @@ export default {
           $("#topPopover").removeClass("mui-active");
           $(".topPopover_wrap").hide();
         }
-       
+
       },
         closeMenu: function (type) {
             if(type){
@@ -3164,7 +3165,7 @@ export default {
             this.closeMenu(1);
 
             this.$nextTick(function(){
-        
+
                 this.skip_newUrl(0, 'trend', 'trend', 'trend');
             });
         },
@@ -3323,7 +3324,7 @@ export default {
         this.handleCoins();
         if(val!=10&&val!=50&&val!=100&&val!=200&&val!=500&&val!=1000&&val!=5000&&val!=10000&&val!=50000){
             $(".betConfirm .coinList .active").removeClass('active');
-          } 
+          }
         //   this.setSpecialSum();
       },
         //追期数
