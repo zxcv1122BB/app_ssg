@@ -17,17 +17,17 @@
 								<span v-bind:key="index"
 									v-for="(items,index) in allpayWay"
 									@click="clickPayTitle(items.pay_type)"
-									
+
 									v-cloak
 								>{{items.payType_name}}<span class="line"></span></span>
-								
+
 							</nav>
             </div>
           </div> -->
           <section>
 						<!-- <p class="con_tit" style="height:48px;">
 							<span class="blue"></span>
-							<span style="position:absolute;left:0;color: #78d6d5;">{{$t('用户信息')}}</span> 
+							<span style="position:absolute;left:0;color: #78d6d5;">{{$t('用户信息')}}</span>
 						</p> -->
 						<div class="userInfo clearfix">
 							<div class="left">
@@ -137,6 +137,7 @@
 						<p class="payBtn"><input type="button" value="下一步" @click="clickPay(3)" /></p>
               </div>-->
             </div>
+            <div style="color: #fff;font-size: 1rem;padding: .5rem; margin: 0 15px;"><span>{{$t('数字货币充值请联系客户')}}</span></div>
           </section>
         </article>
       </div>
@@ -174,7 +175,7 @@
 	}
 #article {
 	margin-top: 44px;
-	
+
 	.topNav {
 		text-align: center;
 		height: 3rem;
@@ -210,7 +211,7 @@
 			&.chooseYes{
 				color: #fff;
 				position: relative;
-					
+
 				.line{
 					background: #fff;
 					height: 2px;
@@ -222,7 +223,7 @@
 				}
 			}
 		}
-		
+
 	}
 	section{
 		.con_tit{
@@ -246,7 +247,7 @@
 			}
 		}
 		.navMes {
-			// background: #fff;	
+			// background: #fff;
 			padding-bottom: 1rem;
 			// border-bottom: 1px solid #ddd;
     	// box-shadow: 1px 1px 1px #a0a0a0;
@@ -254,7 +255,7 @@
 				text-align: center;
 				margin-top: 1rem;
 			}
-	    
+
 		}
 		.userInfo{
 			// background: #fff;
@@ -270,7 +271,7 @@
 		    padding: 1rem;
 		.left{
 			float: left;
-		
+
 			.blueBall{
 					width: 50px;
 				height: 50px;
@@ -285,7 +286,7 @@
 					left: 50%;
 				}
 			}
-			
+
 		}
 		.right{
 			float: left;

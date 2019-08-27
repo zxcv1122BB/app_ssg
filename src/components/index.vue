@@ -50,11 +50,11 @@
                   下载 APP
                 </a>
               </li>
-              <li class="mui-table-view-cell">
+              <!-- <li class="mui-table-view-cell">
                 <a class="mui-navigate-right" href="http://ssg97.webnode.tw/">
                   {{$t('合营简介')}}
                 </a>
-              </li>
+              </li> -->
 							<!-- <li class="mui-table-view-cell">
 								<a class="mui-navigate-right" href="aaa.html">
 									关于我们
