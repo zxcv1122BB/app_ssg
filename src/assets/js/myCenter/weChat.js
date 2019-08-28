@@ -155,6 +155,9 @@ export default{
             if (data.redirect) {
               let newWin = window.open('', '_blank');
               newWin.document.write(data.redirect);
+              // setTimeout(() => {
+              //   document.write(data.redirect);
+              // }, 0);
             }
 						_this.paySet = true;
 						_this.ordernumber = data.ordernumber;
