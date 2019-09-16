@@ -991,21 +991,29 @@ export  default {
             }
           }
           //menu
-          _this.menu.map(function (outItem) {
-            outItem.twoType.map(function (inItem) {
-              if (inItem.maxPrize.indexOf('|') != -1) {
-                var maxList = inItem.maxPrize.split('|'), minList = inItem.minPrize.split('|'), val = "";
-                maxList.map(function (inItems, index) {
-                  var val = parseFloat((inItems - minList[index]) / (_this.rebateList.rebate * 10 + 1)).toFixed(3);
-                  maxList[index] = parseFloat(inItems - (val * (_this.rebateList.rebate - _this.rebateList.nowRebate) * 10)).toFixed(3);
-                })
-                inItem.maxPrize = maxList.join("|");
-              } else {
-                var val = parseFloat((inItem.maxPrize - inItem.minPrize) / (_this.rebateList.rebate * 10 + 1)).toFixed(3);
-                inItem.maxPrize = parseFloat(inItem.maxPrize - (val * (_this.rebateList.rebate - _this.rebateList.nowRebate) * 10)).toFixed(3);
-              }
-            })
-          });
+					_this.menu.map(function (outItem) {
+							outItem.twoType.map(function (inItem) {
+							if (inItem.maxPrize.indexOf('|') != -1) {
+									var maxList = inItem.maxPrize.split('|'), minList = inItem.minPrize.split('|'), val = "";
+									maxList.map(function (inItems, index) {
+									if(_this.rebateList.nowRebate==0){
+											maxList[index] = minList[index]
+									}else{
+											var val = parseFloat((inItems - minList[index]) / (_this.rebateList.rebate * 10 + 1)).toFixed(3);
+											maxList[index] = parseFloat(inItems - (val * (_this.rebateList.rebate - _this.rebateList.nowRebate) * 10)).toFixed(3);
+									}
+									})
+									inItem.maxPrize = maxList.join("|");
+							} else {
+									if(_this.rebateList.nowRebate==0){
+									inItem.maxPrize = inItem.minPrize
+									}else{
+									var val = parseFloat((inItem.maxPrize - inItem.minPrize) / (_this.rebateList.rebate * 10 + 1)).toFixed(3);
+									inItem.maxPrize = parseFloat(inItem.maxPrize - (val * (_this.rebateList.rebate - _this.rebateList.nowRebate) * 10)).toFixed(3);
+									}
+							}
+							})
+					});
 
         }
 
